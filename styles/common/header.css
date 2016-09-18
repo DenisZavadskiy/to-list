@@ -1,0 +1,134 @@
+body > header,
+body > header menu {
+    width: 100%;
+    background: white;
+}
+
+body > header a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+body > header menu {
+    border-bottom: 1px solid #ec644b;
+    font: 300 12px / 39px "OpenSans-Light";
+
+}
+
+body > header > .content {
+    display: flex;
+    align-items: center;
+}
+
+body > header menu .content{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+body > header menu  ul {
+    display: flex;
+    flex-flow: row;
+}
+
+body > header menu  ul li {
+    margin-right: 15px;
+}
+
+.right-side {
+    position: relative;
+}
+
+.smartphone-icon {
+    position: absolute;
+    right: 170px;
+    bottom: -1px;
+}
+
+.phone {
+    font: 700 14px / 30px "OpenSans-Bold";
+    margin: 0 23px;
+    color: #2c3e50;
+}
+
+.language {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    background-color: #ec644b;
+    font: 600 12px / 24px "OpenSans-Semibold";
+    line-height: 39px;
+    text-align: center;
+    color: white;
+}
+
+.logo {
+    width: 126px;
+    height: 38px;
+    background-image: url("../../images/colored-logo.png");
+}
+
+.categories {
+    font: 400 14px / 24px "OpenSans-Light";
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.categories > li {
+   padding: 25px;
+}
+
+.categories > li:before {
+    background: url(https://www.formget.com/wp-content/themes/formget/inc/header-strip/css/../imgs/arrow.png) no-repeat right;
+    width: 12px;
+    height: 7px;
+    border: 0;
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.categories li > ul {
+    display: none;
+    position: absolute;
+    font: 400 12px / 30px "OpenSans-Light";
+    left: 0;
+    margin-top: 24px;
+    background-color: #faf7f3;
+    border: 1px solid #cccccc;
+    border-top: 0;
+    width: 151px;
+    box-sizing: border-box;
+}
+
+.categories li:hover > ul {
+    display: block;
+}
+
+.categories > li:hover {
+    background-color: #faf7f3;
+    box-shadow: inset 0 0 0 1px #cccccc;
+}
+
+.categories > li ul li {
+    padding: 0 15px;
+    position: relative;
+}
+
+.categories > li .submenu-1 > li:hover {
+    background-color: #be97c0;
+}
+
+.categories > li .submenu-1 > li:hover a {
+    color: #faf7f3;
+}
+
+.categories .submenu-2 {
+    position: absolute;
+    top: 0;
+    left: 149px;
+    margin: 0;
+    background-color: #be97c0;
+    border: none;
+}
