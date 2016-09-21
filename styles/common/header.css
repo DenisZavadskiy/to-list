@@ -3,7 +3,9 @@ body > header menu {
     width: 100%;
     background: white;
 }
-
+body > header {
+    box-shadow: 0 0 2px 2px #e1d9cf;
+}
 body > header a {
     text-decoration: none;
     color: #2c3e50;
