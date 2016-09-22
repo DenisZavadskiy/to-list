@@ -1,0 +1,126 @@
+body > footer {
+    width: 100%;
+    background-color: #2c3e50;
+    position: absolute;
+    bottom: 0;
+}
+
+footer .logo {
+    background-image: url("../../images/footer/logo.png");
+}
+
+.footer-content {
+    padding: 45px 0;
+    display: flex;
+}
+
+.footer-content .logo {
+    margin-bottom: 33px;
+}
+
+.subscribe {
+    width: 221px;
+}
+
+.subscribe p {
+    color: #f5f5f5;
+    font: 400 12px / 18px "OpenSans-Light";
+}
+
+.subscribe-form {
+    margin: 19px 0;
+}
+
+.subscribe-form [type="email"] {
+    box-sizing: border-box;
+    width: 223px;
+    padding: 11px 17px;
+    color: #b2b2b2;
+    font: 400 12px / 18px "OpenSans-Light";
+    border: none;
+}
+
+.subscribe-form [type="submit"] {
+    padding: 11px 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font: 400 12px / 18px "OpenSans-Light";
+    background-color: #ec644b;
+    border: none;
+    margin-left: -4px;
+}
+
+.social-icons {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background: url("../../images/social-icons.jpg");
+}
+
+.social-icons .facebook {
+    background-position: 0 0;
+}
+
+.social-icons .twitter {
+    background-position: -40px 0;
+}
+
+.social-icons .google {
+    background-position: -80px 0;
+}
+
+.social-icons .vk {
+    background-position: -120px 0;
+}
+
+.social-icons .instagram {
+    background-position: -160px 0;
+}
+
+.social-icons .dribble {
+    background-position: -200px 0;
+}
+
+.info {
+    display: flex;
+}
+
+.info > div {
+    margin-left: 60px;
+}
+
+.info h4 {
+    color: #faf7f3;
+    font: 700 14px "OpenSans-Bold";
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.info a {
+    font: 400 12px / 24px "OpenSans-Light";
+    text-decoration: none;
+    color: #faf7f3;
+}
+
+.support h4 {
+    font: 400 14px "OpenSans-Light";
+}
+
+.support > div{
+    display: flex;
+    align-items: center;
+    color: #faf7f3;
+    font: 400 12px "OpenSans-Light";
+    margin-bottom: 12px;
+}
+
+.support img {
+    margin-right: 8px;
+}
+
+

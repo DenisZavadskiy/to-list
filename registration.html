@@ -33,6 +33,7 @@
         </menu>
         <div class="content">
             <div class="logo"></div>
+
             <ul class="categories">
                 <li><a href="">Всі категорії</a>
                     <ul class="submenu-1">
@@ -57,9 +58,94 @@
                     </ul>
                 </li>
             </ul>
+
+            <form action="#" method="post" id="search-form">
+                <span id="search-page-border">
+                    <select name="search-which" id="search-which">
+                        <option value="kiev">Київ</option>
+                        <option value="zhytomyr">Житомир</option>
+                    </select>
+                    <input type="text" class="search-terms" name="search-terms" placeholder="Яку роботу вам потрібно виконати?" />
+                </span>
+            </form>
+
+            <div class="user-info">
+                <div class="user-image"></div>
+                <div class="user-name">Юрій</div>
+            </div>
+
+            <div class="user-panel">
+                <a href="#" class="e-mail-icon"><img src="images/e-mail.png" alt=""></a>
+                <a href="#"><img src="images/cogwheel.png" alt=""></a>
+                <a href="#"><img src="images/logout.png" alt=""></a>
+            </div>
+
         </div>
     </header>
 
+    <footer>
+        <div class="content footer-content">
+            <section>
+                <div class="logo"></div>
+
+                <div class="subscribe">
+                    <p>Підпишіться на нашу розсилку і отримуйте свіжі пропозиції щоденно</p>
+                </div>
+
+                <form action="#" method="post" class="subscribe-form">
+                    <input type="email" placeholder="Введіть ваш E-mail">
+                    <input type="submit" value="Підписатися">
+                </form>
+
+                <div class="social-icons">
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="twitter"></a>
+                    <a href="#" class="google"></a>
+                    <a href="#" class="vk"></a>
+                    <a href="#" class="instagram"></a>
+                    <a href="#" class="dribble"></a>
+                </div>
+            </section>
+
+            <section class="info">
+                <div class="about">
+                    <h4>To-list:</h4>
+                    <p><a href="#">Про проект</a></p>
+                    <p><a href="#">Контакти</a></p>
+                    <p><a href="#">Партнерам</a></p>
+                    <p><a href="#">Часті питання</a></p>
+                    <p><a href="#">Написати розробникам</a></p>
+                </div>
+                <div class="how-it-works">
+                    <h4>Як це працює:</h4>
+                    <p><a href="#">Як замовити послугу</a></p>
+                    <p><a href="#">Як стати виконавцем</a></p>
+                    <p><a href="#">Всі виконавці</a></p>
+                    <p><a href="#">Актуальні послуги</a></p>
+                    <p><a href="#">Останні відгуки</a></p>
+                </div>
+                <div class="support">
+                    <h4>Служба підтримки:</h4>
+                    <div>
+                        <img src="images/footer/smartphone.png" alt="">
+                        <div>
+                            +38(044)392-8509 <br>
+                            +38(098)553-5399
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/footer/email.png" alt="">
+                        <div>support@to-liste.com</div>
+                    </div>
+                    <div>
+                        <img src="images/footer/clock.png" alt="">
+                        <div>с 9 до 18 без вихідних</div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </footer>
     <!--<script src="scripts/index.js"></script>-->
 </body>
 </html>
