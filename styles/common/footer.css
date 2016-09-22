@@ -1,8 +1,8 @@
 body > footer {
     width: 100%;
     background-color: #2c3e50;
-    position: absolute;
-    bottom: 0;
+    border: 1px solid transparent;
+    box-sizing: border-box;
 }
 
 footer .logo {
@@ -10,8 +10,9 @@ footer .logo {
 }
 
 .footer-content {
-    padding: 45px 0;
+    margin: 45px auto;
     display: flex;
+    position: relative;
 }
 
 .footer-content .logo {
@@ -59,7 +60,7 @@ footer .logo {
 .social-icons a {
     width: 40px;
     height: 40px;
-    background: url("../../images/social-icons.jpg");
+    background: url("../../images/footer/social-icons.jpg");
 }
 
 .social-icons .facebook {
@@ -107,11 +108,17 @@ footer .logo {
     color: #faf7f3;
 }
 
+.support {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .support h4 {
     font: 400 14px "OpenSans-Light";
 }
 
-.support > div{
+.support > div {
     display: flex;
     align-items: center;
     color: #faf7f3;
@@ -123,4 +130,11 @@ footer .logo {
     margin-right: 8px;
 }
 
-
+.copyright {
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #faf7f3;
+    font: 400 12px / 24px "OpenSans-Regular";
+}
