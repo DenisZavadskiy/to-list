@@ -6,6 +6,7 @@ body > header menu {
 
 body > header {
     box-shadow: 0 0 2px 2px #e1d9cf;
+    position: relative;
 }
 
 body > header a {
