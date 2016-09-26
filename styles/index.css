@@ -103,41 +103,41 @@
     display: block;
     width: 60px;
     height: 60px;
-    position: absolute;
-    top: -86px;
-    margin: auto;
-    left: 0;
-    right: 0;
+    /*position: absolute;*/
+    /*top: -86px;*/
+    margin: 0 auto 26px;
+    /*left: 0;*/
+    /*right: 0;*/
 }
 
-.steps a:nth-child(1)::before {
-    background: url("../images/index/add-documents.png") no-repeat;
-    background-size: contain;
+.steps .step:nth-child(1) a::before {
+    background: url("../images/index/add-documents.png") no-repeat 0 0;
+    background-size: cover;
 }
 
-.steps a:nth-child(2)::before {
-    background: url("../images/index/trophy.png") no-repeat;
-    background-size: contain;
+.steps .step:nth-child(2) a::before {
+    background: url("../images/index/trophy.png") no-repeat 0 0;
+    background-size: cover;
 }
 
-.steps a:nth-child(3)::before {
-    background: url("../images/index/customer.png") no-repeat;
-    background-size: contain;
+.steps .step:nth-child(3) a::before {
+    background: url("../images/index/customer.png") no-repeat 0 0;
+    background-size: cover;
 }
 
-.steps a:nth-child(1):hover::before {
-    background: url("../images/index/add-documents-hover.png") no-repeat;
-    background-size: contain;
+.steps .step:nth-child(1) a:hover::before {
+    background: url("../images/index/add-documents.png") no-repeat -60px 0;
+    background-size: cover;
 }
 
-.steps a:nth-child(2):hover::before {
-    background: url("../images/index/trophy-hover.png") no-repeat;
-    background-size: contain;
+.steps .step:nth-child(2) a:hover::before {
+    background: url("../images/index/trophy.png") no-repeat -60px 0;
+    background-size: cover;
 }
 
-.steps a:nth-child(3):hover::before {
-    background: url("../images/index/customer-hover.png") no-repeat;
-    background-size: contain;
+.steps .step:nth-child(3) a:hover::before {
+    background: url("../images/index/customer.png") no-repeat -60px 0;
+    background-size: cover;
 }
 
 .steps .step {
@@ -152,8 +152,9 @@
     height: 16px;
     position: absolute;
     right: -90px;
-    top: 0;
+    top: 68px;
     bottom: 0;
+    margin: auto;
     background: url("../images/index/arrow.png") no-repeat;
     background-size: contain;
 }
@@ -167,3 +168,51 @@
     color: #f05342;
 }
 
+.client-logo-list-wrapper h3 {
+    text-align: center;
+    color: #2c3e50;
+    font: 400 24px / 30px "OpenSans-Regular";
+    margin: 40px auto 60px;
+    text-transform: uppercase;
+}
+
+.client-logo-list-wrapper h3::before {
+    content: "";
+    display: block;
+    width: 61px;
+    height: 51px;
+    background: url("../images/index/business-deal.png") no-repeat;
+    background-size: contain;
+    margin:0 auto 28px;
+}
+
+.client-logo-list {
+    display: flex;
+    flex-flow: row wrap;
+    width: 806px;
+    margin: 0 auto;
+}
+
+.client-logo {
+    position: relative;
+    margin: 35px;
+}
+
+.client-logo img {
+    transition: opacity 300ms;
+}
+
+.client-logo img:last-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.client-logo a:hover img:last-of-type {
+    opacity: 1;
+}
+
+.client-logo a:hover img:first-of-type {
+    opacity: 0;
+}
