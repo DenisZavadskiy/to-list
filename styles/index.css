@@ -168,6 +168,10 @@
     color: #f05342;
 }
 
+.client-logo-list-wrapper {
+    margin-bottom: 58px;
+}
+
 .client-logo-list-wrapper h3 {
     text-align: center;
     color: #2c3e50;
@@ -189,13 +193,16 @@
 .client-logo-list {
     display: flex;
     flex-flow: row wrap;
-    width: 806px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    width: 896px;
     margin: 0 auto;
 }
 
 .client-logo {
     position: relative;
-    margin: 35px;
+    margin: 22px 45px;
 }
 
 .client-logo img {
@@ -215,4 +222,56 @@
 
 .client-logo a:hover img:first-of-type {
     opacity: 0;
+}
+
+.questions {
+    width: 100%;
+    background: url("../images/index/questions-bg.jpg") 0 20% no-repeat;
+    background-size: cover;
+    padding: 70px 0 80px;
+}
+
+.questions .content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.questions article {
+    width: 518px;
+    margin-right: 40px;
+    color: #2c3e50;
+}
+
+.questions article h3 {
+    font: 300 30px / 30px "OpenSans-Light";
+    text-transform: uppercase;
+}
+
+.questions article h6 {
+    font: 600 18px / 30px "OpenSans-SemiboldItalic";
+    margin: 27px 0;
+}
+
+.questions article p {
+    font: 14px / 24px "OpenSans-Italic";
+}
+
+.questions article .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.questions article input[type=button] {
+    color: #faf7f3;
+    font: 400 12px / 24px "OpenSans-Regular";
+    padding: 7px 14px;
+    border: none;
+    background-color: #ec644b;
+}
+
+.questions article input[type=button].write-to-us {
+    padding: 7px 32px;
+    text-transform: uppercase;
+    background-color: #2c3e50;
 }
