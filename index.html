@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="styles/the-modal.css" media="all" />
     <link rel="stylesheet" href="styles/common/imports.css">
     <link rel="stylesheet" href="styles/index.css">
     <!-- /styles -->
@@ -181,7 +182,7 @@
     </section>
 
     <section class="questions">
-        <section class="content">
+        <div class="content">
             <article>
                 <h3>Виникли питання?</h3>
                 <h6>Звяжіться з нами і ми вам допоможемо</h6>
@@ -192,13 +193,27 @@
                 </p>
 
                 <div class="buttons">
-                    <input type="button" class="write-to-us" value="Написати нам">
+                    <input type="button" class="write-to-us trigger" value="Написати нам">
                     <input type="button" value="Як замовити послугу?">
                     <input type="button" value="Як стати виконавцем?">
                 </div>
             </article>
-        </section>
+        </div>
     </section>
+
+    <section>
+        <div class="modal" id="test-modal" style="display: none">
+            <a href="#" class="close">×</a>
+            <h3>Заповніть форму нижче і ми  обовязково звяжемось з вами</h3>
+            <form action="#" method="post">
+                <input type="text" placeholder="Ім'я">
+                <input type="email" placeholder="Електронна пошта">
+                <textarea name="" id="" cols="30" rows="7" placeholder="Ваш текст..."></textarea>
+                <input type="submit" value="Надіслати">
+            </form>
+        </div>
+    </section>
+
 </section>
 
 <footer>
@@ -265,5 +280,9 @@
 
     </div>
 </footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.the-modal.js"></script>
+<script src="scripts/index.js"></script>
 </body>
 </html>

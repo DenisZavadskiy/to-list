@@ -275,3 +275,66 @@
     text-transform: uppercase;
     background-color: #2c3e50;
 }
+
+.themodal-overlay {
+    background: rgba(44, 62, 80, 0.8);
+    display: flex;
+}
+
+.modal {
+    background-color: #e1d9cf;
+    width: 380px;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+}
+
+.modal .close {
+    position: absolute;
+    text-decoration: none;
+    font-size: 50px;
+    cursor: pointer;
+    top: -15px;
+    right: -40px;
+    color: white;
+}
+
+.modal h3 {
+    color: #2c3e50;
+    font: 700 18px / 22px "OpenSans-Bold";
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.modal form {
+    display: flex;
+    flex-flow: column;
+}
+
+.modal form textarea {
+   max-width: 380px;
+}
+
+.modal form input,
+.modal form textarea {
+    border: none;
+    box-sizing: border-box;
+    padding: 7px 15px;
+    font: 400 14px / 22px "OpenSans-Regular";
+}
+
+.modal form input:focus,
+.modal form textarea:focus {
+    outline-color: #2c3e50;
+}
+
+.modal form input[type=text],
+.modal form textarea {
+    margin: 20px 0;
+}
+
+.modal form input[type=submit] {
+    background-color: #ec644b;
+    text-transform: uppercase;
+    color: white;
+}

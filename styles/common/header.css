@@ -14,6 +14,10 @@ body > header a {
     color: #2c3e50;
 }
 
+body > header ul a:hover {
+    color: #ec644b;
+}
+
 body > header menu {
     border-bottom: 1px solid #ec644b;
     font: 300 12px / 39px "OpenSans-Light";
@@ -157,31 +161,45 @@ body > header menu ul li {
     display: flex;
     width: 451px;
     border: 1px solid #dbdbdb;
-    padding: 5px 7px;
+    padding: 10px 7px;
+    position: relative;
 }
 
 .search-terms {
     border: none;
     width: 393px;
-    margin: 0 8px 0 15px;
+    margin: 0 8px 0 75px;
     outline: none;
     color: #acacac;
     background: url("../../images/header/search.png") no-repeat right;
+    background-size: contain;
+}
+
+.search-terms:focus {
+    color: #2c3e50;
 }
 
 #search-which {
     box-sizing: border-box;
-    width: auto;
-    max-width: 90%;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 72px;
     height: 30px;
     border: none;
     color: #acacac;
     border-right: 1px solid #f2f1ef;
     -webkit-appearance: none;
     -moz-appearance: none;
-    padding: 7px 20px 7px 7px;
+    padding: 6px 21px 6px 14px;
     outline: none;
     background: url(https://www.formget.com/wp-content/themes/formget/inc/header-strip/css/../imgs/arrow.png) no-repeat 90%;
+}
+
+#search-which:focus {
+    color: #2c3e50;
 }
 
 /* /Search Input */
