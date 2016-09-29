@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <!-- styles -->
-    <link rel="stylesheet" type="text/css" href="styles/the-modal.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="styles/the-modal.css" media="all"/>
     <link rel="stylesheet" href="styles/common/imports.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/index.css">
@@ -73,20 +73,12 @@
                 </span>
         </form>
 
-        <div class="login-links">
-            <a href="#">Увійти</a> /
-            <a href="registration.html">Зареєструватися</a>
+        <div class="login-links-wrapper">
+            <div class="login-links">
+                <a href="#">Увійти</a> /
+                <a href="registration.html">Зареєструватися</a>
+            </div>
         </div>
-        <!--<div class="user-info">-->
-            <!--<div class="user-image"></div>-->
-            <!--<div class="user-name">Юрій</div>-->
-        <!--</div>-->
-
-        <!--<div class="user-panel">-->
-            <!--<a href="#" class="e-mail-icon"><img src="images/header/e-mail.png" alt=""></a>-->
-            <!--<a href="#"><img src="images/header/cogwheel.png" alt=""></a>-->
-            <!--<a href="#"><img src="images/header/logout.png" alt=""></a>-->
-        <!--</div>-->
     </div>
 </header>
 
@@ -98,13 +90,13 @@
             <div class="person-type">
                 <input type="radio" name="position" id="customer" value="customer" checked>
                 <label for="customer" class="custom-label">
-                    <span class="type-title">Я замовник</span>
-                    <p class="type-description">В мене є робота, яку потрібно виконати</p>
+                    <span class="type-title">Я замовник</span><br>
+                    <span class="type-description">В мене є робота, яку потрібно виконати</span>
                 </label>
                 <input type="radio" name="position" id="performer" value="performer">
                 <label for="performer" class="custom-label">
-                    <span class="type-title">Я виконавець</span>
-                    <p class="type-description">Я хочу запропонувати свої послуги</p>
+                    <span class="type-title">Я виконавець</span><br>
+                    <span class="type-description">Я хочу запропонувати свої послуги</span>
                 </label>
             </div>
 
@@ -212,7 +204,7 @@
     <section>
         <div class="modal" id="test-modal" style="display: none">
             <a href="#" class="close">×</a>
-            <h3>Заповніть форму нижче і ми  обовязково звяжемось з вами</h3>
+            <h3>Заповніть форму нижче і ми обовязково звяжемось з вами</h3>
             <form action="#" method="post">
                 <input type="text" placeholder="Ім'я">
                 <input type="email" placeholder="Електронна пошта">

@@ -200,9 +200,17 @@ body > header menu ul li {
 
 /* /Search Input */
 
-.login-links {
+.login-links-wrapper {
     position: absolute;
+    display: flex;
+    top: 0;
     right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.login-links {
+    margin: auto;
     color: #2c3e50;
     font: 300 14px / 30px "OpenSans-Light";
 }
@@ -251,19 +259,18 @@ body > header menu ul li {
 
 .e-mail-icon {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.e-mail-icon:before {
-    content: "3";
-    display: block;
+.e-mail-icon .e-mail-count {
     height: 13px;
+    position: absolute;
     background-color: #ec644b;
     color: white;
-    top: -11px;
-    left: 0;
-    right: 0;
+    top: -13px;
+    padding: 0 4px;
     margin: 0 auto;
-    position: absolute;
     font: 700 10px / 13px "OpenSans-Bold";
     text-align: center;
 }

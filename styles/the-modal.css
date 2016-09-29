@@ -28,6 +28,6 @@
 .themodal-overlay {
     background: rgba(0, 0, 0, 0.5);
     /* IE6–IE8 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #7F000000, endColorstr = #7F000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000, endColorstr=#7F000000);
     zoom: 1;
 }

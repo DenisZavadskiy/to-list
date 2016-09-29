@@ -103,11 +103,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    /*position: absolute;*/
-    /*top: -86px;*/
     margin: 0 auto 26px;
-    /*left: 0;*/
-    /*right: 0;*/
 }
 
 .steps .step:nth-child(1) a::before {
@@ -187,7 +183,7 @@
     height: 51px;
     background: url("../images/index/business-deal.png") no-repeat;
     background-size: contain;
-    margin:0 auto 28px;
+    margin: 0 auto 28px;
 }
 
 .client-logo-list {
@@ -312,7 +308,7 @@
 }
 
 .modal form textarea {
-   max-width: 380px;
+    max-width: 380px;
 }
 
 .modal form input,
