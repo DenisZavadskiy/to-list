@@ -170,13 +170,9 @@ body > header menu ul li {
     width: 393px;
     margin: 0 8px 0 75px;
     outline: none;
-    color: #acacac;
+    color: #2c3e50;
     background: url("../../images/header/search.png") no-repeat right;
     background-size: contain;
-}
-
-.search-terms:focus {
-    color: #2c3e50;
 }
 
 #search-which {
@@ -203,6 +199,21 @@ body > header menu ul li {
 }
 
 /* /Search Input */
+
+.login-links {
+    position: absolute;
+    right: 0;
+    color: #2c3e50;
+    font: 300 14px / 30px "OpenSans-Light";
+}
+
+.login-links a {
+    color: #2c3e50;
+}
+
+.login-links a:hover {
+    color: #ec644b;
+}
 
 /* User bar */
 .user-info {
