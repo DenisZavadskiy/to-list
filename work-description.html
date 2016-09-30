@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/the-modal.css" media="all"/>
+    <link rel="stylesheet" href="styles/common/imports.css">
+    <!-- /styles -->
+</head>
+<body>
+<header>
+    <menu>
+        <div class="content header-content">
+            <ul>
+                <li><a href="#">Як замовити Послугу</a></li>
+                <li><a href="#">Як стати виконавцем</a></li>
+                <li><a href="#">Гарантії і безпека</a></li>
+                <li class="resent-orders">
+                    <span>23</span><a href="#">Актуальні замовлення</a>
+                </li>
+                <li><a href="#">Всі майстри</a></li>
+            </ul>
+            <div class="right-side">
+                <img src="images/header/smartphone.png" alt="" class="smartphone-icon">
+                <span class="phone">093 321 23 65</span>
+                <a href="#" class="language">UA</a>
+            </div>
+        </div>
+    </menu>
+    <div class="content header-content">
+        <div class="logo"></div>
+
+        <ul class="categories">
+            <li><a href="">Всі категорії</a>
+                <ul class="submenu-1">
+                    <li><a href="#">Домашній майстер</a></li>
+                    <li><a href="#">Будівельні роботи</a></li>
+                    <li><a href="#">Клінінгові послуги</a></li>
+                    <li><a href="#">Побутові послуги</a>
+                        <ul class="submenu-2">
+                            <li><a href="#">Вивіз сміття</a></li>
+                            <li><a href="#">Послуги грузчиків</a></li>
+                            <li><a href="#">Послуги няні</a></li>
+                            <li><a href="#">Послуги швачки</a></li>
+                            <li><a href="#">Послуги</a></li>
+                            <li><a href="#">ВСІ МАЙСТРИ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ремонт техніки</a></li>
+                    <li><a href="#">Краса та здоров'я</a></li>
+                    <li><a href="#">Автопослуги</a></li>
+                    <li><a href="#">Організація свят</a></li>
+                    <li><a href="#">Інші категорії</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <form action="#" method="post" id="search-form">
+                <span id="search-page-border">
+                    <select name="search-which" id="search-which">
+                        <option value="kiev">Київ</option>
+                        <option value="poltava">Полтава</option>
+                        <option value="lviv">Львів</option>
+                        <option value="zaporizhzhya">Запоріжжя</option>
+                        <option value="cherkasy">Черкаси</option>
+                        <option value="kharkiv">Харків</option>
+                    </select>
+                    <input type="text" class="search-terms" name="search-terms"
+                           placeholder="Яку роботу вам потрібно виконати?"/>
+                </span>
+        </form>
+
+        <div class="login-links-wrapper">
+            <div class="login-links">
+                <a href="#">Увійти</a> /
+                <a href="registration.html">Зареєструватися</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="main-content">
+    <div class="content">
+        <section class="customer">
+            <div class="customer-avatar"></div>
+
+            <div class="customer-name-wrapper">
+                Замовник:
+                <h3 class="customer-name">Сергій К.</h3>
+            </div>
+
+            <div class="masters-reviews">
+                Відгуки майстрів:
+                <span class="mark">
+                    <span class="good-mark">32</span> /
+                    <span class="bad-mark">8</span>
+                </span>
+            </div>
+
+            <div class="place-date-wrapper">
+                <a href="#" class="place">Київ, Академгородок (3.9 км)</a>
+                <span class="date">Дійсне до 14:00, 21.05.2016</span>
+            </div>
+        </section>
+
+        <section class="work-description-wrapper">
+            <div>
+                <h3 class="work-name">Косметический ремонт <span class="work-price">900
+                    <span class="currency">UAH</span></span></h3>
+                <div class="categories">
+                    <span>Ремонтні роботи</span>
+                    <span>Поклейка обоїв</span>
+                    <span>Штукатурні роботи</span>
+                </div>
+
+                <div class="work-description">
+                    <p>Добрый день! Нам надо сделать косметический ремонт в двух комнатах 18м2 и 12м2. В большой комнате
+                        необходимо 1. снять обои с потолка и привести его в порядок после обоев 2. снять старые поклеить
+                        новые обои на стены. в маленькой комнате поменять обои, и сделать плинтуса </p>
+                    <p>Есть Частично инструменты, также частично есть материалы: обои клей краска
+                        Квартира находится в Коцюбинском. ул Мебельная 10 393 маршрутка от Академгородка Кирпичный дом</p>
+                </div>
+            </div>
+
+            <div class="work-info">
+                <div class="date-creation">
+                    Створено: <span class="date">10 червня 11:36</span>
+                </div>
+
+                <div class="payment-type">
+                    Оплата: <span class="type">готівкою</span>
+                </div>
+
+                <div class="contacts">
+                    <h3>Контакти</h3>
+                    <p>Конфіденціальні дані (точна адреса, телефон і т.д.)
+                        будуть доступні тільки виконавцю, якого вибере замовник</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="add-proposition">
+            <input type="checkbox" id="action-toggle">
+            <label for="action-toggle"></label>
+
+            <form action="#" method="post">
+                <span class="currency-wrapper">
+                    <input type="text" placeholder="Вартість">
+                    <select name="currency" id="currency">
+                        <option value="uah">ГРН</option>
+                        <option value="rub">РУБ</option>
+                        <option value="usd">ДОЛЛ</option>
+                        <option value="eu">ЕВРО</option>
+                    </select>
+                </span>
+
+                <span class="terms-wrapper">
+                    <input type="text" placeholder="Термін">
+                    <select name="terms" id="terms">
+                        <option value="hours">Години</option>
+                        <option value="days">Дні</option>
+                        <option value="weeks">Тижні</option>
+                        <option value="months">Місяці</option>
+                    </select>
+                </span>
+
+                <input type="submit" value="Готово">
+                <textarea name="proposition-text" id="" cols="30" rows="10" placeholder="Текст пропозиції"></textarea>
+            </form>
+        </section>
+
+        <section class="propositions">
+            <h3>Пропозиції від майстрів <span class="count-propositions">(2)</span></h3>
+            <div class="worker">
+                <div class="worker-avatar"></div>
+                <div class="worker-info">
+                    <span class="worker-name">Богдан Боярский</span>
+                    <span class="worker-type">Фізична особа</span>
+                    <span class="proposition-add-date">Вчора</span>
+                    <span class="worker-comment">Здравствуйте, готов работать.</span>
+                    <span class="responses">
+                        Відгуки: <span class="good-mark">12</span> / <span class="bad-mark">0</span>
+                    </span>
+                    <span class="cost">
+                        Вартість: <span class="value">750 грн</span>
+                    </span>
+                    <span class="terms">
+                        Терміни: <span class="value">5 днів</span>
+                    </span>
+                    <a href="#">Редагувати</a>
+                    <a href="#">Видалити</a>
+                </div>
+            </div>
+            <div class="worker">
+                <div class="worker-avatar"></div>
+                <div class="worker-info">
+                    <span class="worker-name">Лена Карабицкая</span>
+                    <span class="worker-type">Фізична особа</span>
+                    <span class="proposition-add-date">Вчора</span>
+                    <span class="worker-comment">День добрый!
+                        Готов браться за данный проект, есть пару вопросов, по поводу сроков, бэкэнда и поддержки.
+                        Более конкретное предложение смогу сделать после того как получу ответы на них</span>
+                    <span class="responses">
+                            Відгуки: <span class="good-mark">25</span> / <span class="bad-mark">1</span>
+                        </span>
+                    <span class="cost">
+                            Вартість: <span class="value">800 грн</span>
+                        </span>
+                    <span class="terms">
+                            Терміни: <span class="value">4 днів</span>
+                        </span>
+                    <a href="#">Обрати виконавцем</a>
+                    <a href="#">Написати</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="questions">
+        <div class="content">
+            <div class="caption">
+                <h3>Допомогти з вибором спеціаліста?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus autem consequatur
+                    eum ex expedita iste nemo odit omnis perferendis placeat quo sequi similique tempora tempore
+                    veniam voluptas, voluptates voluptatibus?</p>
+            </div>
+
+            <div class="write-to-us-wrapper">
+                <div class="icon"></div>
+                <p>Розмістіть заявку і протягом 10 хвилин
+                    ми знайдем вам декількох компетентних спеціалістів</p>
+                <a href="#" class="write-to-us">Написати нам</a>
+            </div>
+        </div>
+    </section>
+</section>
+
+<footer>
+    <div class="content footer-content">
+        <section>
+            <div class="logo"></div>
+
+            <div class="subscribe">
+                <p>Підпишіться на нашу розсилку і отримуйте свіжі пропозиції щоденно</p>
+            </div>
+
+            <form action="#" method="post" class="subscribe-form">
+                <input type="email" placeholder="Введіть ваш E-mail">
+                <input type="submit" value="Підписатися">
+            </form>
+
+            <div class="social-icons">
+                <a href="#" class="facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="google">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="vk">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="dribble">
+                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="about">
+                <h4>To-list:</h4>
+                <p><a href="#">Про проект</a></p>
+                <p><a href="#">Контакти</a></p>
+                <p><a href="#">Партнерам</a></p>
+                <p><a href="#">Часті питання</a></p>
+                <p><a href="#">Написати розробникам</a></p>
+            </div>
+            <div class="how-it-works">
+                <h4>Як це працює:</h4>
+                <p><a href="#">Як замовити послугу</a></p>
+                <p><a href="#">Як стати виконавцем</a></p>
+                <p><a href="#">Всі виконавці</a></p>
+                <p><a href="#">Актуальні послуги</a></p>
+                <p><a href="#">Останні відгуки</a></p>
+            </div>
+            <div class="support">
+                <h4>Служба підтримки:</h4>
+                <div>
+                    <img src="images/footer/smartphone.png" alt="">
+                    <div>
+                        +38(044)392-8509 <br>
+                        +38(098)553-5399
+                    </div>
+                </div>
+                <div>
+                    <img src="images/footer/email.png" alt="">
+                    <div>support@to-liste.com</div>
+                </div>
+                <div>
+                    <img src="images/footer/clock.png" alt="">
+                    <div>с 9 до 18 без вихідних</div>
+                </div>
+            </div>
+            <div class="copyright">to-liste.com © 2016. All rights reserved.</div>
+        </section>
+
+    </div>
+</footer>
+</body>
+</html>
