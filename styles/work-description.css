@@ -1,0 +1,81 @@
+.main-content {
+    margin: 20px auto;
+}
+
+.customer {
+    width: 100%;
+    background-color: #e1d9cf;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    color: #2c3e50;
+}
+
+.customer-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url("../images/work-description/customer-avatar.jpg");
+    margin-right: 17px;
+}
+
+.customer-name-wrapper {
+    font: 400 12px "OpenSans-Regular";
+    margin-right: 50px;
+}
+
+.customer-name {
+    font: 700 18px / 22px "OpenSans-Bold";
+    text-transform: uppercase;
+}
+
+.masters-reviews {
+    font: 400 12px "OpenSans-Regular";
+}
+
+.mark {
+    font: 400 18px / 22px "OpenSans-Regular";
+}
+
+.good-mark {
+    color: #24a31a;
+    font: 700 18px / 22px "OpenSans-Bold";
+}
+
+.bad-mark {
+    color: #ec644b;
+    font: 700 14px / 22px "OpenSans-Bold";
+}
+
+.place-date-wrapper {
+    font: 600 12px / 22px "OpenSans-Semibold";
+    text-align: right;
+    margin-left: auto;
+}
+
+.place-date-wrapper .place {
+    color: #ec644b;
+}
+
+.place-date-wrapper .place::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 10px;
+    height: 13px;
+    background: url("../images/work-description/placeholder-for-map.png") no-repeat;
+    background-size: cover;
+}
+
+.place-date-wrapper .date::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+    background:  url("../images/work-description/time.png") no-repeat;
+    background-size: cover;
+}
