@@ -301,10 +301,10 @@
 .submit-proposition {
     margin-left: auto;
     width: 160px;
-    background-color: #ec644b;
     color: #faf7f3;
     border: none;
     text-transform: uppercase;
+    background: #ec644b url("../images/work-description/checked.png") no-repeat 30% center;
 }
 
 #proposition-text {
@@ -493,7 +493,7 @@
     background-color: #ec644b;
     padding: 9px 32px;
     text-transform: uppercase;
-    text-decoration: none;
+    border: none;
 }
 
 
