@@ -1,0 +1,324 @@
+.main-content {
+    margin-top: 20px;
+}
+
+.worker-description {
+    background-color: #2c3e50;
+    padding: 19px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    color: #faf7f3;
+}
+
+.worker-icon {
+    background: url("../images/workers/scientist.png") no-repeat;
+    background-size: cover;
+    width: 39px;
+    height: 42px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.workers-count-wrapper {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    width: 149px;
+    font: 400 12px / 16px "OpenSans-Regular";
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+
+.workers-count {
+    font: 700 36px / 16px "OpenSans-Bold";
+    margin-right: 10px;
+}
+
+.worker-description-title {
+    padding-left: 32px;
+    border-left: 1px solid #faf7f3;
+}
+
+.worker-description-title .title {
+    text-transform: uppercase;
+    font: 600 24px / 20px "OpenSans-Semibold";
+}
+
+.worker-description-title .annotation {
+    font: 14px / 20px "OpenSans-LightItalic";
+}
+
+.worker-show-category {
+    display: flex;
+    align-items: flex-end;
+    margin: 19px 0 42px;
+}
+
+.worker-show-category a {
+    color: #bfb5a6;
+    font: 600 14px / 20px "OpenSans-Semibold";
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.worker-show-category a:hover {
+    color: #2c3e50;
+}
+
+.workers-categories-wrapper {
+    background-color: #ec644b;
+    width: 240px;
+    padding: 15px;
+    box-sizing: border-box;
+    color: white;
+    font: 600 12px / 20px "OpenSans-Semibold";
+    margin-left: auto;
+    position: relative;
+}
+
+.workers-categories-wrapper > li {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.workers-categories-wrapper .categories {
+    display: none;
+    text-transform: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 100;
+}
+
+.workers-categories-wrapper .categories li {
+    font: 400 12px / 24px "OpenSans-Regular";
+    background-color: #ec644b;
+    padding-left: 15px;
+}
+
+.workers-categories-wrapper .categories li:first-of-type {
+    margin-top: 15px;
+}
+
+.workers-categories-wrapper .categories li:hover {
+    background-color: #2c3e50;
+}
+
+.workers-categories-wrapper:hover .categories {
+    display: block;
+}
+
+.workers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.worker {
+    width: 290px;
+    height: 379px;
+    position: relative;
+    margin-bottom: 44px;
+}
+
+.worker:nth-of-type(1),
+.worker:nth-of-type(5) {
+    background: url("../images/workers/worker-1.png");
+}
+
+.worker:nth-of-type(2),
+.worker:nth-of-type(6) {
+    background: url("../images/workers/worker-2.png");
+}
+
+.worker:nth-of-type(3),
+.worker:nth-of-type(4) {
+    background: url("../images/workers/worker-3.png");
+}
+
+.worker header {
+    width: 100%;
+    background-color: #e1d9cf;
+    display: flex;
+    align-items: center;
+    color: #2c3e50;
+    font: 600 14px / 16px "OpenSans-Semibold";
+    text-transform: uppercase;
+    padding: 7px 13px;
+    box-sizing: border-box;
+}
+
+.worker .is-online-indicator {
+    width: 7px;
+    height: 7px;
+    background-color: #2c3e50;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+
+.worker.online .is-online-indicator {
+    background-color: #51aa1b;
+}
+
+.worker .worker-reviews-icon {
+    width: 16px;
+    height: 14px;
+    background: url("../images/workers/speech-bubble.png") no-repeat;
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.worker .marks {
+    font: 400 18px / 22px "OpenSans-Regular";
+}
+
+.worker .marks .good-mark {
+    color: #51aa1b;
+    font: 700 18px / 22px "OpenSans-Bold";
+}
+
+.worker .marks .bad-mark {
+    color: #ef4836;
+    font: 700 14px / 22px "OpenSans-Bold";
+}
+
+.worker footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, rgba(44, 63, 80, 0.8));
+}
+
+.worker footer .place {
+    margin-left: 15px;
+    color: #faf7f3;
+    font: 600 12px / 22px "OpenSans-Semibold";
+    text-transform: uppercase;
+}
+
+.worker footer .place::before {
+    content: "";
+    display: inline-block;
+    margin-right: 9px;
+    width: 10px;
+    height: 13px;
+    background: url("../images/workers/placeholder-for-map.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.worker footer .write-to-worker {
+    display: none;
+    margin-left: auto;
+    color: #faf7f3;
+    font: 700 12px / 22px "OpenSans-Bold";
+    background-color: #ec644b;
+    padding: 9px 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.worker.online footer .write-to-worker {
+    display: block;
+}
+
+.pages {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.pages .prev,
+.pages .next {
+    width: 13px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.pages .prev {
+    margin-left: auto;
+    background: url("../images/workers/prev-next-page.png") no-repeat;
+}
+
+.pages .next {
+    background: url("../images/workers/prev-next-page.png") no-repeat;
+    transform: rotateZ(180deg);
+}
+
+.page-numbers {
+    display: flex;
+    flex-shrink: 0;
+    margin: 0 10px;
+}
+
+.page-numbers a {
+    color: #b3a99c;
+    font: 400 18px / 22px "OpenSans-Regular";
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 14px;
+}
+
+.page-numbers a:hover {
+    color: #faf7f3;
+    background-color: #2c3e50;
+
+}
+
+.questions {
+    padding: 63px 0;
+    background-color: #e1d9cf;
+}
+
+.questions .content {
+    color: #2c3e50;
+    display: flex;
+
+}
+
+.questions .caption {
+    padding-left: 20px;
+    padding-right: 47px;
+    border-right: 1px solid #2c3e50;
+    width: 470px;
+    flex-shrink: 0;
+}
+
+.questions .caption h3 {
+    font: 300 30px / 30px "OpenSans-Light";
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.questions .caption p {
+    font: 14px / 24px "OpenSans-Italic";
+}
+
+.questions .write-to-us-wrapper {
+    margin-left: 50px;
+}
+
+.questions .write-to-us-wrapper .icon {
+    width: 43px;
+    height: 43px;
+    background-image: url("../images/work-description/compass.png");
+}
+
+.questions .write-to-us-wrapper p {
+    font: 600 14px / 24px "OpenSans-Semibold";
+    margin: 20px 0;
+}
+
+.questions .write-to-us-btn {
+    color: #faf7f3;
+    font: 400 12px / 24px "OpenSans-Regular";
+    background-color: #ec644b;
+    padding: 9px 32px;
+    text-transform: uppercase;
+    border: none;
+}
