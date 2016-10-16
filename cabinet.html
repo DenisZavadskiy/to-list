@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/the-modal.css" media="all"/>
+    <link rel="stylesheet" href="styles/common/imports.css">
+    <link rel="stylesheet" href="styles/the-modal.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/cabinet.css">
+    <!-- /styles -->
 </head>
 <body>
 <header>
@@ -86,12 +94,12 @@
             <div class="worker-image"></div>
             <div class="worker-info">
                 <header>
-                    <div class="is-online-indicator"></div>
+                    <div class="is-online-indicator online"></div>
                     <span class="worker-name">Юрій Волошин</span>
                     <a href="#" class="write-to-worker">Звязатися з виконавцем</a>
                 </header>
 
-                <span class="become-member-from">На сайті з 10 липня</span>
+                <div class="become-member-from">На сайті з 10 липня</div>
 
                 <section class="worker-info-container">
                     <div class="worker-info-content">
@@ -147,16 +155,128 @@
 
                 <footer>
                     <div class="work-categories">
-                        <span>Поклейка обоїв</span>
-                        <span>Укладка плитки</span>
-                        <span>Малярні роботи</span>
-                        <span>Штукатурні роботи</span>
-                        <span>Гіпсокартонні роботи</span>
+                        <a href="#">Поклейка обоїв</a>
+                        <a href="#">Укладка плитки</a>
+                        <a href="#">Малярні роботи</a>
+                        <a href="#">Штукатурні роботи</a>
+                        <a href="#">Гіпсокартонні роботи</a>
                     </div>
                 </footer>
             </div>
         </section>
+        <section class="comments-gallery-wrapper">
+            <section class="comments-wrapper">
+                <div class="section-title">Відгуки</div>
+                <header>
+                    <span class="count-positive-wrapper"><span class="count-positive">45</span> позитивних</span>
+                    <span class="count-negative-wrapper"><span class="count-negative">2</span> негативних</span>
+                    <span class="positive-percent-wrapper"><span class="positive-percent">92%</span> позитивних</span>
+                </header>
+                <section class="comments">
+                    <div class="comment">
+                        <span class="name">Светлана</span>
+                        <div class="stars-comment-time-wrapper">
+                            <div class="stars">
+                                <span class="rating-stars"></span>
+                            </div>
+                            <span class="comment-time">Вчора</span>
+                        </div>
+                        <div class="comment-content">Я очень рада, что мне попались такие замечательные работники!
+                            Выполнили всё быстро и качественно!
+                        </div>
+                        <span class="exercise">Завдання: <a href="#">поклеить виноловые обои на флезилиновой основе</a></span>
+                    </div>
+                    <div class="comment">
+                        <div class="name">Юрій</div>
+
+                        <div class="stars-comment-time-wrapper">
+                            <div class="stars">
+                                <span class="rating-stars"></span>
+                            </div>
+                            <span class="comment-time">6 днів тому</span>
+                        </div>
+
+                        <div class="comment-content">Хороший мастер,работу выполнил качественно! Вежливый пунктуальный.
+                            За собой убирает и аккуратно выполняет всю работу! Довольны работой этого мастера,
+                            сделал нам красоту.)
+                        </div>
+                        <span class="exercise">Завдання: <a href="#">нужно покрасить потолок</a></span>
+                    </div>
+                    <div class="comment">
+                        <span class="name">Светлана</span>
+                        <div class="stars-comment-time-wrapper">
+                            <div class="stars">
+                                <span class="rating-stars"></span>
+                            </div>
+                            <span class="comment-time">Вчора</span>
+                        </div>
+                        <div class="comment-content">Я очень рада, что мне попались такие замечательные работники!
+                            Выполнили всё быстро и качественно!
+                        </div>
+                        <span class="exercise">Завдання: <a href="#">поклеить виноловые обои на флезилиновой основе</a></span>
+                    </div>
+                </section>
+                <footer>
+                    <section class="pages">
+                        <span class="prev"></span>
+                        <span class="page-numbers">
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                        </span>
+                        <span class="next"></span>
+                    </section>
+                </footer>
+            </section>
+            <section class="gallery-wrapper">
+                <div class="section-title">Галерея робіт</div>
+                <div class="gallery-images">
+                    <div class="gallery-image"><img src="images/cabinet/pic-1.png" alt=""></div>
+                    <div class="gallery-image"><img src="images/cabinet/pic-2.jpg" alt=""></div>
+                    <div class="gallery-image"><img src="images/cabinet/pic-3.jpg" alt=""></div>
+                    <div class="gallery-image"><img src="images/cabinet/pic-2.jpg" alt=""></div>
+                    <div class="gallery-image"><img src="images/cabinet/pic-1.png" alt=""></div>
+                </div>
+                <div class="all-photos">Всі фото (<span class="count-photos">23</span>)</div>
+            </section>
+        </section>
     </div>
+
+    <section class="questions">
+        <div class="content">
+            <div class="caption">
+                <h3>Допомогти з вибором спеціаліста?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus autem consequatur
+                    eum ex expedita iste nemo odit omnis perferendis placeat quo sequi similique tempora tempore
+                    veniam voluptas, voluptates voluptatibus?</p>
+            </div>
+
+            <div class="write-to-us-wrapper">
+                <div class="icon"></div>
+                <p>Розмістіть заявку і протягом 10 хвилин
+                    ми знайдем вам декількох компетентних спеціалістів</p>
+                <input type="button" class="write-to-us-btn trigger" value="Написати нам">
+            </div>
+        </div>
+    </section>
+
+    <section class="modal-wrapper">
+        <div class="modal" id="test-modal" style="display: none">
+            <a href="#" class="close">×</a>
+            <h3>Заповніть форму нижче і ми обовязково звяжемось з вами</h3>
+            <form action="#" method="post">
+                <input type="text" placeholder="Ім'я">
+                <input type="email" placeholder="Електронна пошта">
+                <textarea name="" id="" cols="30" rows="7" placeholder="Ваш текст..."></textarea>
+                <input type="submit" value="Надіслати">
+            </form>
+        </div>
+    </section>
 </section>
 
 <footer>
@@ -235,5 +355,9 @@
 
     </div>
 </footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.the-modal.js"></script>
+<script src="scripts/index.js"></script>
 </body>
 </html>
