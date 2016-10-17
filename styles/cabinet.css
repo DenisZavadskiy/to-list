@@ -49,7 +49,16 @@
     margin-left: auto;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 8px 11px;
+    padding: 7px 11px;
+}
+
+.write-to-worker::before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    width: 17px;
+    height: 12px;
+    background: url("../images/cabinet/e-mail-envelope.png") no-repeat;
 }
 
 .become-member-from {
@@ -71,7 +80,7 @@
 
 .worker-info-content .personal-info,
 .worker-info-content .contacts,
-.worker-info-content .education-info{
+.worker-info-content .education-info {
     margin-bottom: 25px;
 }
 

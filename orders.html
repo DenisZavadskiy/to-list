@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/common/imports.css">
+    <link rel="stylesheet" href="styles/the-modal.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/orders.css">
+    <!-- /styles -->
+</head>
+<body>
+<header>
+    <menu>
+        <div class="content header-content">
+            <ul>
+                <li><a href="#">Як замовити Послугу</a></li>
+                <li><a href="#">Як стати виконавцем</a></li>
+                <li><a href="#">Гарантії і безпека</a></li>
+                <li class="resent-orders">
+                    <span>23</span><a href="#">Актуальні замовлення</a>
+                </li>
+                <li><a href="#">Всі майстри</a></li>
+            </ul>
+            <div class="right-side">
+                <img src="" alt="" class="smartphone-icon">
+                <span class="phone">093 321 23 65</span>
+                <a href="#" class="language">UA</a>
+            </div>
+        </div>
+    </menu>
+    <div class="content header-content">
+        <div class="logo"></div>
+
+        <ul class="categories">
+            <li><a href="">Всі категорії</a>
+                <ul class="submenu-1">
+                    <li><a href="#">Домашній майстер</a></li>
+                    <li><a href="#">Будівельні роботи</a></li>
+                    <li><a href="#">Клінінгові послуги</a></li>
+                    <li><a href="#">Побутові послуги</a>
+                        <ul class="submenu-2">
+                            <li><a href="#">Вивіз сміття</a></li>
+                            <li><a href="#">Послуги грузчиків</a></li>
+                            <li><a href="#">Послуги няні</a></li>
+                            <li><a href="#">Послуги швачки</a></li>
+                            <li><a href="#">Послуги</a></li>
+                            <li><a href="#">ВСІ МАЙСТРИ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ремонт техніки</a></li>
+                    <li><a href="#">Краса та здоров'я</a></li>
+                    <li><a href="#">Автопослуги</a></li>
+                    <li><a href="#">Організація свят</a></li>
+                    <li><a href="#">Інші категорії</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <form action="#" method="post" id="search-form">
+                <span id="search-page-border">
+                    <select name="search-which" id="search-which">
+                        <option value="kiev">Київ</option>
+                        <option value="poltava">Полтава</option>
+                        <option value="lviv">Львів</option>
+                        <option value="zaporizhzhya">Запоріжжя</option>
+                        <option value="cherkasy">Черкаси</option>
+                        <option value="kharkiv">Харків</option>
+                    </select>
+                    <input type="text" class="search-terms" name="search-terms"
+                           placeholder="Яку роботу вам потрібно виконати?"/>
+                </span>
+        </form>
+
+        <div class="login-links-wrapper">
+            <div class="login-links">
+                <a href="#">Увійти</a> /
+                <a href="registration.html">Зареєструватися</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="main-content">
+    <div class="content">
+        <form action="" class="orders-filter-form">
+            <h3>Фільтр замовлень</h3>
+            <input type="text" placeholder="Спеціалізації" class="specialization">
+
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="onlyYourSpecialization">
+                <label for="onlyYourSpecialization">Тільки ваша спеціалізація</label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="lessTwoRates">
+                <label for="lessTwoRates">Менше двох ставок</label>
+            </div>
+
+            <div class="reset-submit-buttons">
+                <input type="reset" value="Скинути">
+                <input type="submit" value="Застосувати">
+            </div>
+        </form>
+
+        <section class="orders-wrapper">
+            <header>
+                <div class="orders-count-wrapper">
+                    Знайдено <span class="orders-count">24</span> замовлення
+                </div>
+                <div class="view-buttons">
+                    <span class="view-button list-view active-view">Списком</span>
+                    <span class="view-button tile-view">Плиткою</span>
+                </div>
+            </header>
+            <section class="orders">
+                <div class="active-view-list list-view-orders">
+                    <div class="order">
+                        <header>
+                            <a href="#" class="order-title">Разыскиваю пруфридера для Eng-Rus, Eng-Ukr переводов</a>
+                            <span class="price">За домовленістю</span>
+                        </header>
+                        <section class="order-content">
+                            Добрый день, уважаемые фрилансеры.<br>
+                            Я разыскиваю пруфридера для текстов, переведенных с английского на русский и/или украинский
+                            языки.
+                            Возможно, два разных человека.<br>
+                            Регулярные заказы, порядочность, своевременность оплаты гарантирую.
+                        </section>
+                        <footer>
+                            <span class="place">Київ</span>
+                            <span class="valid-date">Дійсне до 14:00, 21.05.2016</span>
+                            <span class="proposition-count-wrapper"><span class="proposition-count">2</span> пропозиції</span>
+                        </footer>
+                    </div>
+                    <div class="order">
+                        <header>
+                            <a href="#" class="order-title">Потрібно покласти плитку на кухні</a>
+                            <span class="price">
+                                <span class="value">1300</span>
+                                <span class="currency">uah</span>
+                            </span>
+                        </header>
+                        <section class="order-content">
+                            Покласти плитку у ванні і туалеті,зашити труби, поставити ванну
+                        </section>
+                        <footer>
+                            <span class="place">Луцьк</span>
+                            <span class="valid-date">Дійсне до 14:00, 21.05.2016</span>
+                            <span class="proposition-count-wrapper"><span class="proposition-count">5</span> пропозиції</span>
+                        </footer>
+                    </div>
+                    <div class="order">
+                        <header>
+                            <a href="#" class="order-title">Разыскиваю пруфридера для Eng-Rus, Eng-Ukr переводов</a>
+                            <span class="price">За домовленістю</span>
+                        </header>
+                        <section class="order-content">
+                            Добрый день, уважаемые фрилансеры.<br>
+                            Я разыскиваю пруфридера для текстов, переведенных с английского на русский и/или украинский
+                            языки.
+                            Возможно, два разных человека.<br>
+                            Регулярные заказы, порядочность, своевременность оплаты гарантирую.
+                        </section>
+                        <footer>
+                            <span class="place">Київ</span>
+                            <span class="valid-date">Дійсне до 14:00, 21.05.2016</span>
+                            <span class="proposition-count-wrapper"><span class="proposition-count">2</span> пропозиції</span>
+                        </footer>
+                    </div>
+                </div>
+                <div class="tile-view-orders">
+                    <div class="order">
+                        <header>
+                            <a href="#" class="order-title">Покласти плитку у ванні</a>
+                            <span class="price">
+                                <span class="value">1200</span>
+                                <span class="currency">uah</span>
+                            </span>
+                        </header>
+                        <section class="order-content">
+                            Покласти плитку у ванні і туалеті,зашити труби, поставити ванну
+                            <div class="order-categories">Ремонт квартир Установка плитки</div>
+                        </section>
+                        <footer>
+                            <div class="place tooltip" data-title="Луцьк"></div>
+                            <div class="valid-date tooltip" data-title="До 21.08.2016"></div>
+                            <span class="proposition-count-wrapper"><span class="proposition-count">5</span> пропозиції</span>
+                        </footer>
+                    </div>
+                    <div class="order">
+                        <header>
+                            <a href="#" class="order-title">Разыскиваю пруфридера для Eng-Rus, Eng-Ukr...</a>
+                            <span class="price">Договірна</span>
+                        </header>
+                        <section class="order-content">
+                            Добрый день, уважаемые фрилансеры.<br>
+                            Я разыскиваю пруфридера для текстов, переведенных с английского...
+                            <div class="order-categories">Переклади Написання текстів</div>
+                        </section>
+                        <footer>
+                            <div class="place tooltip" data-title="Київ"></div>
+                            <div class="valid-date tooltip" data-title="До 21.08.2016"></div>
+                            <span class="proposition-count-wrapper"><span class="proposition-count">2</span> пропозиції</span>
+                        </footer>
+                    </div>
+                    <div class="order">
+                        <header>
+                            <a href="#" class="order-title">Разыскиваю пруфридера для Eng-Rus, Eng-Ukr...</a>
+                            <span class="price">Договірна</span>
+                        </header>
+                        <section class="order-content">
+                            Добрый день, уважаемые фрилансеры.<br>
+                            Я разыскиваю пруфридера для текстов, переведенных с английского...
+                            <div class="order-categories">Переклади Написання текстів</div>
+                        </section>
+                        <footer>
+                            <div class="place tooltip" data-title="Луцьк"></div>
+                            <div class="valid-date tooltip" data-title="До 21.08.2016"></div>
+                            <span class="proposition-count-wrapper"><span class="proposition-count">2</span> пропозиції</span>
+                        </footer>
+                    </div>
+                    <div class="order">
+                        <header>
+                            <a href="#" class="order-title">Покласти плитку у ванні</a>
+                            <span class="price">
+                                <span class="value">1200</span>
+                                <span class="currency">uah</span>
+                            </span>
+                        </header>
+                        <section class="order-content">
+                            Покласти плитку у ванні і туалеті,зашити труби, поставити ванну
+                            <div class="order-categories">Ремонт квартир Установка плитки</div>
+                        </section>
+                        <footer>
+                            <div class="place tooltip" data-title="Луцьк"></div>
+                            <div class="valid-date tooltip" data-title="До 21.08.2016"></div>
+                            <span class="proposition-count-wrapper"><span class="proposition-count">5</span> пропозиції</span>
+                        </footer>
+                    </div>
+                    <div class="order">
+                        <header>
+                            <a href="#" class="order-title">Покласти плитку у ванні</a>
+                            <span class="price">
+                                <span class="value">1200</span>
+                                <span class="currency">uah</span>
+                            </span>
+                        </header>
+                        <section class="order-content">
+                            Покласти плитку у ванні і туалеті,зашити труби, поставити ванну
+                            <div class="order-categories">Ремонт квартир Установка плитки</div>
+                        </section>
+                        <footer>
+                            <div class="place tooltip" data-title="Луцьк"></div>
+                            <div class="valid-date tooltip" data-title="До 21.08.2016"></div>
+                            <span class="proposition-count-wrapper"><span class="proposition-count">5</span> пропозиції</span>
+                        </footer>
+                    </div>
+                    <div class="order">
+                        <header>
+                            <a href="#" class="order-title">Разыскиваю пруфридера для Eng-Rus, Eng-Ukr...</a>
+                            <span class="price">Договірна</span>
+                        </header>
+                        <section class="order-content">
+                            Добрый день, уважаемые фрилансеры.<br>
+                            Я разыскиваю пруфридера для текстов, переведенных с английского...
+                            <div class="order-categories">Переклади Написання текстів</div>
+                        </section>
+                        <footer>
+                            <div class="place tooltip" data-title="Київ"></div>
+                            <div class="valid-date tooltip" data-title="До 21.08.2016"></div>
+                            <span class="proposition-count-wrapper"><span class="proposition-count">2</span> пропозиції</span>
+                        </footer>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <section class="pages">
+                    <span class="prev"></span>
+                    <span class="page-numbers">
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                        </span>
+                    <span class="next"></span>
+                </section>
+            </footer>
+        </section>
+    </div>
+
+    <section class="questions">
+        <div class="content">
+            <article>
+                <h3>Виникли питання?</h3>
+                <h6>Звяжіться з нами і ми вам допоможемо</h6>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type
+                </p>
+
+                <div class="buttons">
+                    <input type="button" class="write-to-us trigger" value="Написати нам">
+                    <input type="button" value="Як замовити послугу?">
+                    <input type="button" value="Як стати виконавцем?">
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="modal" id="test-modal" style="display: none">
+            <a href="#" class="close">×</a>
+            <h3>Заповніть форму нижче і ми обовязково звяжемось з вами</h3>
+            <form action="#" method="post">
+                <input type="text" placeholder="Ім'я">
+                <input type="email" placeholder="Електронна пошта">
+                <textarea name="" id="" cols="30" rows="7" placeholder="Ваш текст..."></textarea>
+                <input type="submit" value="Надіслати">
+            </form>
+        </div>
+    </section>
+
+</section>
+
+<footer>
+    <div class="content footer-content">
+        <section>
+            <div class="logo"></div>
+
+            <div class="subscribe">
+                <p>Підпишіться на нашу розсилку і отримуйте свіжі пропозиції щоденно</p>
+            </div>
+
+            <form action="#" method="post" class="subscribe-form">
+                <input type="email" placeholder="Введіть ваш E-mail">
+                <input type="submit" value="Підписатися">
+            </form>
+
+            <div class="social-icons">
+                <a href="#" class="facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="google">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="vk">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="dribble">
+                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="about">
+                <h4>To-list:</h4>
+                <p><a href="#">Про проект</a></p>
+                <p><a href="#">Контакти</a></p>
+                <p><a href="#">Партнерам</a></p>
+                <p><a href="#">Часті питання</a></p>
+                <p><a href="#">Написати розробникам</a></p>
+            </div>
+            <div class="how-it-works">
+                <h4>Як це працює:</h4>
+                <p><a href="#">Як замовити послугу</a></p>
+                <p><a href="#">Як стати виконавцем</a></p>
+                <p><a href="#">Всі виконавці</a></p>
+                <p><a href="#">Актуальні послуги</a></p>
+                <p><a href="#">Останні відгуки</a></p>
+            </div>
+            <div class="support">
+                <h4>Служба підтримки:</h4>
+                <div>
+                    <img src="images/footer/smartphone.png" alt="">
+                    <div>
+                        +38(044)392-8509 <br>
+                        +38(098)553-5399
+                    </div>
+                </div>
+                <div>
+                    <img src="images/footer/email.png" alt="">
+                    <div>support@to-liste.com</div>
+                </div>
+                <div>
+                    <img src="images/footer/clock.png" alt="">
+                    <div>с 9 до 18 без вихідних</div>
+                </div>
+            </div>
+            <div class="copyright">to-liste.com © 2016. All rights reserved.</div>
+        </section>
+
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.the-modal.js"></script>
+<script src="scripts/index.js"></script>
+</body>
+</html>
