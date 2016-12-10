@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/common/imports.css">
     <link rel="stylesheet" href="styles/the-modal.css">
     <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css">
     <link rel="stylesheet" href="styles/orders.css">
     <!-- /styles -->
 </head>
@@ -87,7 +88,58 @@
     <div class="content">
         <form action="" class="orders-filter-form">
             <h3>Фільтр замовлень</h3>
-            <input type="text" placeholder="Спеціалізації" class="specialization">
+
+            <div class="specializations">
+                <select name="specializations" id="specializations" multiple>
+                    <optgroup label="Ремонт">
+                        <option value="repair-house">Ремонт Квартир</option>
+                        <option value="repair-tech">Ремонт цифрової техніки</option>
+                    </optgroup>
+                    <optgroup label="Автопослуги">
+                        <option value="fuel-delivery">Доставка топлива</option>
+                    </optgroup>
+                    <optgroup label="Інші послуги">
+                        <option value="delivery">Доставка</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="region-wrapper">
+                <input type="checkbox" id="region-show">
+                <label for="region-show">Регіон</label>
+
+                <div class="region-list-wrapper">
+                    <select name="regions" id="regions" multiple>
+                        <optgroup label="Харківська область">
+                            <option value="Ha">Харків</option>
+                        </optgroup>
+                        <optgroup label="Донецька область">
+                            <option value=Haz>Харцизьк</option>
+                            <option value=Haz2>Харцизьк2</option>
+                            <option value=Haz3>Харцизьк3</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="value-wrapper">
+                <input type="checkbox" id="value-show">
+                <label for="value-show">Ціна</label>
+
+                <div class="value-range-wrapper">
+                    <input type="number" min="0" class="price-range" placeholder="Від">
+                    <input type="number" min="1" class="price-range" placeholder="До">
+                    <select name="currency" id="currency">
+                        <option value="uah">UAH</option>
+                        <option value="usd">USD</option>
+                        <option value="eu">EUR</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="price-wrapper"></div>
 
             <div class="checkbox-wrapper">
                 <input type="checkbox" id="onlyYourSpecialization">
@@ -99,7 +151,7 @@
             </div>
 
             <div class="reset-submit-buttons">
-                <input type="reset" value="Скинути">
+                <input type="reset" value="Скинути" id="reset">
                 <input type="submit" value="Застосувати">
             </div>
         </form>
@@ -115,7 +167,7 @@
                 </div>
             </header>
             <section class="orders">
-                <div class="active-view-list list-view-orders">
+                <div class="list-view-orders">
                     <div class="order">
                         <header>
                             <a href="#" class="order-title">Разыскиваю пруфридера для Eng-Rus, Eng-Ukr переводов</a>
@@ -170,7 +222,7 @@
                         </footer>
                     </div>
                 </div>
-                <div class="tile-view-orders">
+                <div class=" active-view-list tile-view-orders">
                     <div class="order">
                         <header>
                             <a href="#" class="order-title">Покласти плитку у ванні</a>
@@ -408,6 +460,8 @@
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.the-modal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 <script src="scripts/index.js"></script>
+<script src="scripts/orders.js"></script>
 </body>
 </html>

@@ -6,6 +6,11 @@
     display: flex;
 }
 
+.worker-image-friends-wrapper {
+    display: flex;
+    flex-flow: column;
+}
+
 .worker-image {
     width: 200px;
     height: 261px;
@@ -15,6 +20,167 @@
     flex-shrink: 0;
 }
 
+.add-to-friends {
+    width: 100%;
+    background: #ec644b;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font: 700 12px / 22px "OpenSans-Bold";
+    text-align: center;
+    padding: 7px 0;
+}
+
+.friends {
+    display: flex;
+    margin: 12px 0 19px;
+    position: relative;
+}
+
+.friends-caption {
+    color: #b6b6b6;
+    font: 600 12px / 22px "OpenSans-Semibold";
+    margin-top: auto;
+    margin-right: 5px;
+}
+
+.friends-list {
+    display: flex;
+    flex-flow: row;
+}
+
+.friends-list .worker-friend::before,
+.more-friends .worker-friend::before {
+    opacity: 0;
+    visibility: hidden;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    bottom: -5px;
+    border-bottom: 4px solid #ec644b;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.friends-list .worker-friend::after,
+.more-friends .worker-friend::after {
+    content: attr(data-name);
+    display: none;
+    visibility: hidden;
+    position: relative;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    color: #2c3e50;
+    font: 600 12px "OpenSans-Semibold";
+    border: 1px solid #ec644b;
+    padding: 3px;
+    margin-top: 20px;
+    top: 10px;
+    background: white;
+}
+
+.friends-list .worker-friend:hover::after,
+.more-friends .worker-friend:hover::after {
+    display: block;
+    visibility: visible;
+    z-index: 100;
+}
+
+.friends-list .worker-friend:hover::before,
+.more-friends .worker-friend:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.friends-list .worker-friend,
+.more-friends .worker-friend {
+    width: 21px;
+    height: 27px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-right: 5px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+
+.more-friends .worker-friend {
+    margin: 3px;
+}
+
+.friends-list .worker-friend:nth-of-type(1),
+.more-friends .worker-friend:nth-of-type(1),
+.more-friends .worker-friend:nth-of-type(6),
+.more-friends .worker-friend:nth-of-type(11) {
+    background: url("../images/cabinet/friend-1.jpg") top center no-repeat;
+}
+
+.friends-list .worker-friend:nth-of-type(2),
+.more-friends .worker-friend:nth-of-type(2),
+.more-friends .worker-friend:nth-of-type(7),
+.more-friends .worker-friend:nth-of-type(12) {
+    background: url("../images/cabinet/friend-2.jpg") top center no-repeat;
+}
+
+.friends-list .worker-friend:nth-of-type(3),
+.more-friends .worker-friend:nth-of-type(3),
+.more-friends .worker-friend:nth-of-type(8) {
+    background: url("../images/cabinet/friend-3.jpg") top center no-repeat;
+}
+
+.friends-list .worker-friend:nth-of-type(4),
+.more-friends .worker-friend:nth-of-type(9),
+.more-friends .worker-friend:nth-of-type(4) {
+    background: url("../images/cabinet/friend-2.jpg") top center no-repeat;
+}
+
+.friends-list .worker-friend:nth-of-type(5),
+.more-friends .worker-friend:nth-of-type(5),
+.more-friends .worker-friend:nth-of-type(10) {
+    background: url("../images/cabinet/friend-4.jpg") top center no-repeat;
+}
+
+.more-friends {
+    display: none;
+    flex-flow: row wrap;
+    width: 142px;
+    background: #faf7f3;
+    border: 1px solid #ec644b;
+    padding: 2px;
+    box-sizing: border-box;
+    position: absolute;
+    right: -142px;
+    bottom: 0;
+}
+
+.worker-friend:hover {
+    border: 1px solid #ec644b;
+}
+
+.show-more-friends {
+    width: 27px;
+    height: 27px;
+    background-color: #e1d9cf;
+    margin-left: auto;
+    text-align: center;
+    line-height: 27px;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.show-more-friends:hover {
+    background: #ec644b;
+    color: white;
+}
+
+.show-more-friends:hover .more-friends {
+    display: flex;
+}
+
 .worker-info {
     margin-left: 12px;
 }
@@ -22,6 +188,7 @@
 .worker-info header {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .worker-info .is-online-indicator {
@@ -42,23 +209,61 @@
     font: 600 24px / 16px "OpenSans-Semibold";
 }
 
+.make-appointment-to-worker {
+    margin-left: auto;
+}
+
 .write-to-worker {
+    margin-left: 20px;
+}
+
+.write-to-worker,
+.make-appointment-to-worker {
     color: #faf7f3;
     font: 700 12px / 22px "OpenSans-Bold";
     background: #ec644b;
-    margin-left: auto;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 7px 11px;
+    padding: 7px 28px;
 }
 
-.write-to-worker::before {
+.write-to-worker::before,
+.make-appointment-to-worker::before,
+.add-to-friends::before {
     content: "";
     display: inline-block;
     margin-right: 8px;
     width: 17px;
     height: 12px;
     background: url("../images/cabinet/e-mail-envelope.png") no-repeat;
+    vertical-align: sub;
+}
+
+.make-appointment-to-worker::before {
+    height: 16px;
+    background: url("../images/cabinet/calendar.png");
+}
+
+.add-to-friends::before {
+    width: 21px;
+    background: url("../images/cabinet/offering-left-hand.png");
+}
+
+#overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 62, 80, 0.8);
+    position: absolute;
+    z-index: 1000;
+}
+
+#calendar-modal-wrapper {
+    display: none;
+    position: absolute;
+    right: 58px;
+    top: 36px;
+    z-index: 1010;
 }
 
 .become-member-from {
@@ -396,4 +601,187 @@
     padding: 9px 32px;
     text-transform: uppercase;
     border: none;
+}
+
+.name-online-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.name-online-wrapper .is-online-indicator {
+    flex-shrink: 0;
+}
+
+.connection-btn-wrapper {
+    margin-left: auto;
+    display: flex;
+}
+
+@media only screen and (max-device-width: 500px),
+            screen and (max-width: 500px) {
+    .worker-info-wrapper {
+        flex-flow: column;
+    }
+
+    .worker-image-friends-wrapper {
+        width: 250px;
+        margin: auto;
+    }
+
+    .worker-image {
+        margin: auto;
+    }
+
+    .friends-list .worker-friend {
+        width: 30px;
+        height: 35px;
+    }
+
+    .friends-caption {
+        line-height: 35px;
+        margin-top: 0;
+    }
+
+    .show-more-friends {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .add-to-friends {
+        width: 200px;
+        margin: auto;
+    }
+
+    .more-friends {
+        right: 0;
+        bottom: 35px;
+    }
+
+    .worker-info {
+        margin-left: 0;
+    }
+
+    .worker-info header {
+        flex-flow: column;
+        margin-bottom: 30px;
+    }
+
+    .name-online-wrapper {
+        margin: 15px 0;
+    }
+
+    .connection-btn-wrapper {
+        margin: auto;
+    }
+
+    .write-to-worker, .make-appointment-to-worker {
+        padding: 7px 9px;
+    }
+
+    .worker-info-container {
+        flex-flow: column;
+        padding-left: 0;
+    }
+
+    .worker-info-content {
+        width: 280px;
+        margin: auto;
+    }
+
+    .worker-description {
+        width: 280px;
+        margin: auto;
+    }
+
+    .worker-info-content .caption {
+        vertical-align: top;
+    }
+
+    .worker-info-content .value {
+        width: 110px;
+        display: inline-block;
+    }
+
+    .work-categories {
+        margin: 10px auto 0;
+        width: 280px;
+    }
+
+    .become-member-from {
+        margin-left: 0;
+    }
+
+    .main-content {
+        margin: auto;
+        margin-top: 19px;
+        width: 100%;
+    }
+
+    .comments-gallery-wrapper {
+        margin: 60px auto;
+        width: 280px;
+        flex-flow: column-reverse;
+    }
+
+    .comments-wrapper {
+        width: 248px;
+        border-right: none;
+    }
+
+    #calendar-modal-wrapper {
+        display: none;
+        position: absolute;
+        right: auto;
+        top: -481px;
+    }
+
+    .gallery-wrapper {
+        width: 280px;
+        box-sizing: border-box;
+        border-bottom: 2px solid #e1d9cf;
+    }
+
+    .gallery-wrapper .gallery-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 8px;
+    }
+
+    .comments-wrapper header {
+        font-size: 12px;
+    }
+
+    .comments-wrapper header .count-positive-wrapper, .comments-wrapper header .count-negative-wrapper {
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .comments-wrapper header .positive-percent-wrapper {
+        text-align: center;
+        margin-top: auto;
+    }
+
+    .page-numbers a {
+        padding:0 6px;
+    }
+
+    .questions .content {
+        width: 100%;
+        flex-flow: column;
+    }
+
+    .questions .caption {
+        width: 280px;
+        padding: 0;
+        border: none;
+        border-bottom: 1px solid #2c3e50;
+        margin: 0 auto 15px;
+        padding-bottom: 15px;
+    }
+
+    .questions .write-to-us-wrapper {
+        margin: auto;
+        width: 280px;
+    }
 }

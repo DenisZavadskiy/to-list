@@ -1,6 +1,6 @@
 .main-content {
-    margin-top: 19px;
-}
+     margin-top: 19px;
+ }
 
 .main-content .content {
     display: flex;
@@ -20,6 +20,7 @@
     color: #2c3e50;
     font: 700 18px / 22px "OpenSans-Bold";
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .orders-filter-form .checkbox-wrapper {
@@ -526,4 +527,161 @@
     padding: 7px 32px;
     text-transform: uppercase;
     background-color: #2c3e50;
+}
+
+.specializations {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.region-list-wrapper {
+    position: relative;
+    margin: 10px 0 30px;
+    display: none;
+}
+
+#region-show,
+#value-show {
+    display: none;
+}
+
+#region-show + label:before,
+#value-show + label:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: url("../images/orders/arrow.png") center no-repeat;
+    margin-right: 10px;
+}
+
+#region-show:checked + label:before,
+#value-show:checked + label:before {
+    background: url("../images/orders/arrow-open.png") center no-repeat;
+}
+
+#region-show:not(:checked) + label + .region-list-wrapper,
+#value-show:not(:checked) + label + .value-range-wrapper {
+    display: none;
+}
+
+#region-show:checked + label + .region-list-wrapper,
+#value-show:checked + label + .value-range-wrapper {
+    display: block;
+}
+
+#region-show + label,
+#value-show + label {
+    font: 400 16px/24px "OpenSans-Regular";
+    text-transform: uppercase;
+    color: #2c3e50;
+}
+
+#region-show:checked + label,
+#value-show:checked + label {
+    color: #ec644b;
+}
+
+.region-wrapper,
+.value-wrapper {
+    margin: 0 0 10px;
+}
+
+.region-list-wrapper {
+    position: relative;
+    margin: 10px 0 20px;
+}
+
+.value-range-wrapper {
+    margin: 20px 0;
+}
+
+.select2-container {
+    width: 100% !important;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: none;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: none;
+    border-radius: 0;
+    background-color: #faf7f3;
+    padding: 5px;
+}
+
+.select2-dropdown {
+    position: absolute;
+    border: none;
+    border-radius: 0;
+    background-color: #faf7f3;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    /*overflow-y: auto;*/
+    /*height: 27px;*/
+}
+
+.select2-container {
+    position: relative;
+}
+
+.selection {
+    width: 100%;
+    border: none;
+    position: relative;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    border-radius: 0;
+    background: transparent;
+    border: 2px solid #ccc5bc;
+    font: 400 14px/20px "OpenSans-Regular";
+    margin-top: 2px;
+    color: #2c3e50;
+}
+
+.select2-container--open .select2-dropdown--below {
+    z-index: 999999;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    float: right;
+    margin: 0 0 0 5px;
+    font-size: 25px;
+    font-family: initial;
+    color: #181717;
+}
+
+.select2-results__options {
+    font-size: 12px;
+    font-family: "OpenSans-Regular";
+}
+
+.select2-container--default .select2-results__group {
+    font-size: 12px;
+    font-family: "OpenSans-Bold";
+}
+
+.price-range {
+    width: 90px;
+    border: none;
+    box-sizing: border-box;
+    background-color: #faf7f3;
+    padding: 8px;
+    outline: none;
+    margin-right: 4px;
+}
+
+#currency {
+    padding: 8px;
+    box-sizing: border-box;
+    width: 50px;
+    background: #2c3e50;
+    color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
 }

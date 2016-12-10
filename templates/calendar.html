@@ -1,0 +1,30 @@
+<div class="calendar-wrapper">
+    <div class="calendar">
+        <div class="header">
+            <i class="fa fa-angle-left" ng-click="previous()"></i>
+            <span>{{month.format("MMMM, YYYY")}}</span>
+            <i class="fa fa-angle-right" ng-click="next()"></i>
+        </div>
+        <div class="week" ng-repeat="week in weeks">
+            <span class="day" ng-class="{ today: day.isToday, 'different-month': !day.isCurrentMonth,
+            selected: day.date.isSame(selected), 'with-events': day.events.length }"
+                  ng-click="select(day)" ng-repeat="day in week.days">{{day.number}}</span>
+        </div>
+    </div>
+    <form name="addCommentForm" class="add-comment-form">
+        <input ng-click="showTimeList=!showTimeList" class="select-time" type="text"
+               placeholder="Вибрати час зустрічі" ng-value="selectedDateAndTime" readonly>
+
+        <ul class="time" ng-show="showTimeList" ng-click="showTimeList=!showTimeList">
+            <li ng-attr-data="{{time.comment}}" ng-repeat="time in times" ng-class="{'time-selected': time.selected }"
+                ng-click="selectTime(time)">{{ time.value }}
+            </li>
+        </ul>
+
+        <button ng-click="addEvent(selectedItem)" ng-disabled="!(!!selectedTime.value && !!comment)"
+                class="add-meeting-btn">Готово
+        </button>
+
+        <input type="text" placeholder="Комментар до запису" ng-model="comment" class="calendar-comment">
+    </form>
+</div>
