@@ -97,7 +97,7 @@
             </div>
 
             <div class="masters-reviews">
-                Відгуки майстрів: <br>
+                Відгуки<span class="hide-in-mobile"> майстрів</span>:<br>
                 <span class="mark">
                     <span class="good-mark">32</span>/<span class="bad-mark">8</span>
                 </span>
@@ -111,7 +111,7 @@
 
         <section class="work-description-wrapper">
             <div class="work-main-info">
-                <h3 class="work-name">Косметический ремонт <span class="work-price">900
+                <h3 class="work-name-wrapper"><span class="work-name">Косметический ремонт</span><span class="work-price"> 900
                     <span class="currency">UAH</span></span></h3>
                 <div class="work-categories">
                     <span>Ремонтні роботи</span>
@@ -147,34 +147,36 @@
         </section>
 
         <section class="add-proposition-wrapper">
-            <input type="checkbox" id="action-toggle">
-            <label for="action-toggle"></label>
+            <div>
+                <input type="checkbox" id="action-toggle">
+                <label for="action-toggle"></label>
 
-            <form action="#" method="post" id="add-proposition">
-                <span class="currency-wrapper">
-                    <input type="text" placeholder="Вартість">
-                    <select name="currency" id="currency">
-                        <option value="uah">ГРН</option>
-                        <option value="rub">РУБ</option>
-                        <option value="usd">ДОЛЛ</option>
-                        <option value="eu">ЕВРО</option>
-                    </select>
-                </span>
+                <form action="#" method="post" id="add-proposition">
+                    <span class="currency-wrapper">
+                        <input type="text" placeholder="Вартість">
+                        <select name="currency" id="currency">
+                            <option value="uah">ГРН</option>
+                            <option value="rub">РУБ</option>
+                            <option value="usd">ДОЛЛ</option>
+                            <option value="eu">ЕВРО</option>
+                        </select>
+                    </span>
 
-                <span class="terms-wrapper">
-                    <input type="text" placeholder="Термін">
-                    <select name="terms" id="terms">
-                        <option value="hours">Години</option>
-                        <option value="days">Дні</option>
-                        <option value="weeks">Тижні</option>
-                        <option value="months">Місяці</option>
-                    </select>
-                </span>
+                    <span class="terms-wrapper">
+                        <input type="text" placeholder="Термін">
+                        <select name="terms" id="terms">
+                            <option value="hours">Години</option>
+                            <option value="days">Дні</option>
+                            <option value="weeks">Тижні</option>
+                            <option value="months">Місяці</option>
+                        </select>
+                    </span>
 
-                <input type="submit" value="      Готово" class="submit-proposition">
-                <textarea name="proposition-text" id="proposition-text" cols="30" rows="5"
-                          placeholder="Текст пропозиції"></textarea>
-            </form>
+                    <input type="submit" value="      Готово" class="submit-proposition">
+                    <textarea name="proposition-text" id="proposition-text" cols="30" rows="5"
+                              placeholder="Текст пропозиції"></textarea>
+                </form>
+            </div>
 
             <div class="social-icons">
                 <a href="#" class="facebook">
@@ -240,7 +242,7 @@
                         Терміни: <span class="value">4 <span class="terms-type">дні</span></span>
                     </span>
                     <span class="links">
-                        <a href="#">Обрати виконавцем</a>
+                        <a href="#">Обрати<span class="hide-in-mobile"> виконавцем</span></a>
                         <a href="#">Написати</a>
                     </span>
                 </div>
@@ -282,7 +284,7 @@
 
 <footer>
     <div class="content footer-content">
-        <section>
+        <section class="socials-logo-form">
             <div class="logo"></div>
 
             <div class="subscribe">

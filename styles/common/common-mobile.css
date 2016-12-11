@@ -1,5 +1,4 @@
-@media only screen and (max-device-width: 500px),
-screen and (max-width: 500px) {
+@media only screen and (max-device-width: 500px), screen and (max-width: 500px) {
     body > header, body > header menu {
         width: 100%;
         margin: 0 auto;
@@ -9,16 +8,21 @@ screen and (max-width: 500px) {
     .content {
         width: 280px;
     }
+
+
     .header-content {
-        width: 100%;
-        padding: 0 10px;
+        position: relative;
     }
 
     .main-content {
         width: 100%;
     }
 
-    .header-content .categories,
+    .content.main-content {
+        width: 280px;
+    }
+
+
     #search-form,
     .user-panel,
     .user-info,
@@ -29,6 +33,62 @@ screen and (max-width: 500px) {
     body > header menu ul li:nth-of-type(3) {
         display: none;
     }
+
+    /* Categories */
+    .header-content .categories > li {
+        padding: 0;
+        width: 36px;
+        height: 38px;
+    }
+
+    .header-content .categories {
+        margin: 0;
+        margin-left: auto;
+        position: static;
+    }
+
+    .header-content .categories > li:before {
+        width: 36px;
+        height: 38px;
+        background: url("../../images/header/categories.png") no-repeat;
+        margin-right: 0;
+    }
+
+    .header-content .categories > li:before {
+        position: absolute;
+        right: 0;
+        top: 20px;
+    }
+
+    .header-content .categories .submenu ul {
+        position: static;
+    }
+
+    .header-content .categories li > ul {
+        width: 100%;
+        margin-top: 0;
+        border: none;
+        top: 80px;
+        font-size: 18px;
+    }
+
+    .header-content .categories .main-list-item:hover {
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .header-content .categories .submenu-1 {
+        background-color: #e1d9cf;
+    }
+
+    .header-content .categories .submenu-2 {
+        background-color: #2c3e50;
+    }
+
+    .header-content .categories > li .submenu-1 > li:hover {
+        background-color: #2c3e50;
+    }
+    /* /Categories */
 
     .logo {
         margin: 20px 0;
@@ -64,7 +124,7 @@ screen and (max-width: 500px) {
     }
 
     .subscribe-form [type="email"] {
-        width: 163px;
+        width: 157px;
     }
 
     .social-icons {
@@ -83,5 +143,58 @@ screen and (max-width: 500px) {
     .modal .close {
         top: -5px;
         right: 5px;
+    }
+
+    .hide-in-mobile {
+        display: none;
+    }
+
+    .questions .content {
+        width: 100%;
+        flex-flow: column;
+    }
+
+    .questions .caption {
+        width: 280px;
+        padding: 0;
+        border: none;
+        border-bottom: 1px solid #2c3e50;
+        margin: 0 auto 15px;
+        padding-bottom: 15px;
+    }
+
+    .questions .write-to-us-wrapper {
+        margin: auto;
+        width: 280px;
+    }
+
+    .comments-wrapper footer {
+        justify-content: center;
+    }
+
+    .comments-wrapper header {
+        font-size: 12px;
+    }
+
+    .comments-wrapper header .count-positive-wrapper, .comments-wrapper header .count-negative-wrapper {
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .comments-wrapper header .positive-percent-wrapper {
+        text-align: center;
+        margin-top: auto;
+    }
+
+    .page-numbers a {
+        padding: 2px 8px;
+    }
+
+    .pages {
+        justify-content: center;
+    }
+
+    .pages .prev {
+        margin-left: 0;
     }
 }

@@ -125,7 +125,7 @@ body > header menu ul li {
     display: block;
 }
 
-.header-content .categories > li:hover {
+.header-content .categories .main-list-item:hover {
     background-color: #faf7f3;
     box-shadow: inset 0 0 0 1px #cccccc;
 }

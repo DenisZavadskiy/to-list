@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <!-- styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css">
     <link rel="stylesheet" href="styles/orders.css">
+    <link rel="stylesheet" href="styles/common/common-mobile.css">
     <!-- /styles -->
 </head>
 <body>
@@ -161,13 +163,13 @@
                 <div class="orders-count-wrapper">
                     Знайдено <span class="orders-count">24</span> замовлення
                 </div>
-                <div class="view-buttons">
+                <div class="view-buttons hide-in-mobile">
                     <span class="view-button list-view active-view">Списком</span>
                     <span class="view-button tile-view">Плиткою</span>
                 </div>
             </header>
             <section class="orders">
-                <div class="list-view-orders">
+                <div class="active-view-list list-view-orders">
                     <div class="order">
                         <header>
                             <a href="#" class="order-title">Разыскиваю пруфридера для Eng-Rus, Eng-Ukr переводов</a>
@@ -222,7 +224,7 @@
                         </footer>
                     </div>
                 </div>
-                <div class=" active-view-list tile-view-orders">
+                <div class="tile-view-orders">
                     <div class="order">
                         <header>
                             <a href="#" class="order-title">Покласти плитку у ванні</a>
@@ -383,7 +385,7 @@
 
 <footer>
     <div class="content footer-content">
-        <section>
+        <section  class="socials-logo-form">
             <div class="logo"></div>
 
             <div class="subscribe">

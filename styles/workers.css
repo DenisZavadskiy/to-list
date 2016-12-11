@@ -11,6 +11,10 @@
     color: #faf7f3;
 }
 
+.workers-count-info {
+    display: flex;
+}
+
 .worker-icon {
     background: url("../images/workers/scientist.png") no-repeat;
     background-size: cover;
@@ -18,6 +22,7 @@
     height: 42px;
     flex-shrink: 0;
     margin-right: 20px;
+    display: inline-block;
 }
 
 .workers-count-wrapper {
@@ -26,8 +31,9 @@
     text-transform: uppercase;
     width: 149px;
     font: 400 12px / 16px "OpenSans-Regular";
-    margin-right: 25px;
     flex-shrink: 0;
+    padding-right: 25px;
+    border-right: 1px solid #faf7f3;
 }
 
 .workers-count {
@@ -37,7 +43,6 @@
 
 .worker-description-title {
     padding-left: 32px;
-    border-left: 1px solid #faf7f3;
 }
 
 .worker-description-title .title {
@@ -55,19 +60,19 @@
     margin: 19px 0 42px;
 }
 
-.worker-show-category a {
+.worker-show-category .sort-category {
     color: #bfb5a6;
     font: 600 14px / 20px "OpenSans-Semibold";
     text-decoration: none;
     margin-right: 20px;
 }
 
-.worker-show-category a:hover {
+.worker-show-category .sort-category:hover {
     color: #2c3e50;
 }
 
 .workers-categories-wrapper {
-    background-color: #ec644b;
+    background: #ec644b url("../images/workers/list-arrow.png") 95% no-repeat;
     width: 240px;
     padding: 15px;
     box-sizing: border-box;
@@ -95,6 +100,11 @@
     font: 400 12px / 24px "OpenSans-Regular";
     background-color: #ec644b;
     padding-left: 15px;
+}
+
+.workers-categories-wrapper .categories li a {
+    text-decoration: none;
+    color: white;
 }
 
 .workers-categories-wrapper .categories li:first-of-type {
@@ -321,4 +331,56 @@
     padding: 9px 32px;
     text-transform: uppercase;
     border: none;
+}
+
+@media only screen and (max-device-width: 500px), screen and (max-width: 500px) {
+    .worker-description {
+        flex-flow: column;
+    }
+
+    .worker-description-title {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .worker-description-title .title {
+        display: block;
+        margin-bottom: 10px;
+        line-height: 28px;
+    }
+
+    .worker-show-category {
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .workers-categories-wrapper {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .worker-show-category .sort-category {
+        margin-right: 0;
+        margin-bottom: 20px;
+        order: 5;
+        font-size: 17px;;
+    }
+
+    .workers-categories-wrapper .categories li {
+        font-size: 14px;
+    }
+
+    .page-numbers a {
+        padding: 2px 8px;
+    }
+
+    .pages {
+        justify-content: center;
+    }
+
+    .pages .prev {
+        margin-left: 0;
+    }
 }

@@ -1,6 +1,6 @@
 .main-content {
-     margin-top: 19px;
- }
+    margin-top: 19px;
+}
 
 .main-content .content {
     display: flex;
@@ -684,4 +684,62 @@
     -moz-appearance: none;
     outline: none;
     border: none;
+}
+
+@media only screen and (max-device-width: 500px), screen and (max-width: 500px) {
+    .main-content .content {
+        flex-flow: column;
+    }
+
+    .orders-filter-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .orders-wrapper {
+        width: 100%;
+    }
+
+    .tile-view-orders .order {
+        width: 100%;
+    }
+
+    .orders-wrapper .view-buttons {
+        display: none;
+    }
+
+    .questions {
+        padding: 50px 0 10px;
+    }
+
+    .questions .content {
+        align-items: center;
+    }
+
+    .questions article {
+        width: 280px;
+        margin-right: 0;
+    }
+
+    .questions article .buttons {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .questions article input[type=button] {
+        margin-bottom: 20px;
+        width: 170px;
+    }
+
+    .list-view-orders {
+        display: none;
+    }
+
+    .tile-view-orders {
+        display: flex;
+    }
+
+    .price-range {
+        width: 80px;
+    }
 }

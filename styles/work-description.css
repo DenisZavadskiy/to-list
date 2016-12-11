@@ -94,7 +94,7 @@
     width: 740px;
 }
 
-.work-name {
+.work-name-wrapper {
     color: #2c3e50;
     font: 600 24px / 36px "OpenSans-Semibold";
     text-transform: uppercase;
@@ -107,7 +107,7 @@
 }
 
 .work-price .currency {
-    font: 600 14px / 36px "OpenSans-Semibold";
+    font: 600 14px "OpenSans-Semibold";
 }
 
 .work-categories {
@@ -493,4 +493,138 @@
     padding: 9px 32px;
     text-transform: uppercase;
     border: none;
+}
+
+@media only screen and (max-device-width: 500px), screen and (max-width: 500px) {
+    .customer {
+        flex-flow: row wrap;
+    }
+
+    .customer-name-wrapper {
+        margin-right: 0;
+    }
+
+    .masters-reviews {
+        margin-left: auto;
+    }
+
+    .place-date-wrapper {
+        text-align: left;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .work-description-wrapper {
+        flex-flow: column;
+    }
+
+    .work-main-info {
+        width: 100%;
+        padding: 0;
+        border: 0;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e1d9cf;
+    }
+
+    .work-name-wrapper {
+        display: flex;
+    }
+
+    .work-price {
+        line-height: normal;
+    }
+
+    .work-price .currency {
+        vertical-align: top;
+    }
+
+    .work-additional-info {
+        padding: 0;
+    }
+
+    .work-additional-info .contacts {
+        margin: 0;
+    }
+
+    .add-proposition-wrapper {
+        width: 100%;
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .add-proposition-wrapper .social-icons {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    #action-toggle + label::before {
+        width: 100%;
+    }
+
+    .currency-wrapper, .terms-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .currency-wrapper {
+        margin-right: 0;
+    }
+
+    .currency-wrapper input[type=text], .currency-wrapper #currency, .terms-wrapper input[type=text], .terms-wrapper #terms {
+        width: 200px;
+    }
+
+    .currency-wrapper #currency, .terms-wrapper #terms {
+        width: 50px;
+    }
+
+    .submit-proposition {
+        margin: 0;
+        width: 100%;
+        order: 4;
+        padding: 10px;
+        background-position-x: 40%;
+    }
+
+    #proposition-text {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .propositions-wrapper {
+        width: 100%;
+    }
+
+    .propositions-wrapper .worker-comment {
+        order: 6;
+    }
+
+    .propositions-wrapper .proposition-add-date {
+        order: 7;
+    }
+
+    .propositions-wrapper .worker-type {
+        margin-bottom: 10px;
+    }
+
+    .propositions-wrapper .links {
+        display: flex;
+        margin-left: 0;
+        order: 8;
+        margin-top: 10px;
+    }
+
+    .propositions-wrapper .links a {
+        background: #ec644b;
+        width: 73px;
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 3px 0;
+    }
+
+    .propositions-wrapper .links a:last-of-type {
+        margin-left: 5px;
+    }
 }

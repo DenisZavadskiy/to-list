@@ -254,8 +254,9 @@
     width: 100%;
     height: 100%;
     background: rgba(44, 62, 80, 0.8);
-    position: absolute;
     z-index: 1000;
+    position: fixed;
+    overflow: auto;
 }
 
 #calendar-modal-wrapper {
@@ -746,42 +747,5 @@
         width: 120px;
         height: 120px;
         margin-bottom: 8px;
-    }
-
-    .comments-wrapper header {
-        font-size: 12px;
-    }
-
-    .comments-wrapper header .count-positive-wrapper, .comments-wrapper header .count-negative-wrapper {
-        margin-right: 10px;
-        text-align: center;
-    }
-
-    .comments-wrapper header .positive-percent-wrapper {
-        text-align: center;
-        margin-top: auto;
-    }
-
-    .page-numbers a {
-        padding:0 6px;
-    }
-
-    .questions .content {
-        width: 100%;
-        flex-flow: column;
-    }
-
-    .questions .caption {
-        width: 280px;
-        padding: 0;
-        border: none;
-        border-bottom: 1px solid #2c3e50;
-        margin: 0 auto 15px;
-        padding-bottom: 15px;
-    }
-
-    .questions .write-to-us-wrapper {
-        margin: auto;
-        width: 280px;
     }
 }
