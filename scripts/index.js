@@ -10,14 +10,19 @@ jQuery(function ($) {
     }).on('click', '.trigger', function (e) {
         e.preventDefault();
         $('#test-modal').modal().open();
+    }).on('click', '.has-submenu', function (e) {
+        if (e.target === e.currentTarget && window.innerWidth <= 500) {
+            $(this).children('.submenu').toggle(0, "", function () {
+                $(this).find('.submenu').css("display", "none");
+            });
+        }
     });
-    //     .on('click', '.has-submenu', function (e) {
-    //     if (e.target === e.currentTarget) {
-    //         $(this).children('.submenu').toggle(0, "", function () {
-    //             $(this).find('.submenu').css("display", "none");
-    //         });
-    //     }
-    // }).on('click', '.main-list-item', function (e) {
+
+    $(window).resize(function () {
+        $('.submenu').css("display", "none").attr("style", "");
+    });
+
+    //     .on('click', '.main-list-item', function (e) {
     //     e.stopPropagation();
     //     if (e.target === e.currentTarget) {
     //         $(this).toggleClass('show-list');
