@@ -1,0 +1,115 @@
+.dialog-container {
+    margin: auto;
+    width: 560px;
+    border: 3px solid #e1d9cf;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+}
+
+.conversation-wrapper {
+    padding: 20px 0 20px 20px;
+}
+
+.conversation-wrapper .heading {
+    color:  #2c3e50;
+    font-size: 14px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.conversation-wrapper .heading .dialog-container-title {
+    font-family: "OpenSans-Bold";
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 3px;
+}
+
+.conversation-wrapper .heading .conversation-with {
+    font-family: "OpenSans-Regular";
+    font-weight: 400;
+}
+
+.conversation-wrapper .heading .conversation-with .whom {
+    color: #ec644b;
+}
+
+.conversation {
+    overflow: auto;
+    height: 220px;
+    width: 100%;
+}
+
+.dialog-message-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin-bottom: 20px;
+}
+
+.dialog-message-container.you {
+    flex-flow: row-reverse nowrap;
+}
+
+.dialog-message-container .member-image {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #e1d9cf;
+    background-color: #f4f2f2;
+}
+
+.dialog-message-container .dialog-message-wrapper {
+    width: 460px;
+    border: 1px solid #e1d9cf;
+    background-color:  #f4f2f2;
+    font: 400 12px "OpenSans-Regular";
+    color:  #2c3e50;
+    padding: 9px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.dialog-message-container.interlocutor .dialog-message-wrapper:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -9px;
+    top: 11px;
+    border-top: 9px solid transparent;
+    border-right: 9px solid #e1d9cf;
+    border-bottom: 9px solid transparent;
+}
+
+.dialog-message-container.you .dialog-message-wrapper:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -9px;
+    top: 11px;
+    border-top: 9px solid transparent;
+    border-left: 9px solid #e1d9cf;
+    border-bottom: 9px solid transparent;
+}
+
+.dialog-message-container .dialog-message-info {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialog-message-container .dialog-message-info .member-name {
+    color:  #6a747e;
+}
+
+.dialog-message-container .dialog-message-info .dialog-message-date {
+    color:  #b6b5b5;
+}
+
+
+.send-message-form-wrapper {
+    padding: 20px;
+}
