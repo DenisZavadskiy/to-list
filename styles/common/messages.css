@@ -1,0 +1,234 @@
+.messages-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 560px;
+    border: 3px solid #e1d9cf;
+    background-color: #fff;
+    height: 360px;
+    box-sizing: border-box;
+    padding: 24px;
+    display: flex;
+    flex-flow: column;
+}
+
+.message-container-title {
+    font: 700 14px "OpenSans-Bold";
+    color: #2c3e50;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.messages-status-container {
+    background-color: #e1d9cf;
+    margin: 19px 0;
+}
+
+.messages-status {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 400 12px "OpenSans-Regular";
+    color: #2c3e50;
+    padding: 3px 11px;
+}
+
+.messages-status.active {
+    color: #fff;
+    background-color: #ec644b;
+}
+
+.message-block-captions {
+    display: flex;
+    justify-content: space-between;
+    font: 400 11px/11px "OpenSans-Regular";
+    color: #2c3e50;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    flex-shrink: 0;
+}
+
+.message-block-captions .block-caption:first-of-type {
+    margin-left: 28px;
+}
+
+.message-block-captions .block-caption:last-of-type {
+    margin-right: 12px;
+}
+
+.messages {
+    margin-bottom: 20px;
+}
+
+.message-wrapper {
+    border: 1px solid #e1d9cf;
+    display: flex;
+    align-items: center;
+    font: 400 12px "OpenSans-Regular";
+    color: #a9a8a8;
+    margin-bottom: 1px;
+    position: relative;
+    flex-flow: row wrap;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.message-wrapper.not-read {
+    background-color: #e1d9cf;
+    border-color: #2c3e50;
+}
+
+.message-wrapper.not-read .message-content-preview {
+    color: #2c3e50;
+}
+
+.message-wrapper.not-read .message-content-preview:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 10px;
+    background: url("../../images/common/e-mail.png") no-repeat;
+    background-size: contain;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.message-wrapper .remove-message {
+    display: none;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 40px;
+    height: 40px;
+    background: #ec644b url("../../images/common/close_icon.png") center center no-repeat;
+}
+
+.message-wrapper:hover {
+    background-color: #f4f2f2;
+}
+
+.message-wrapper:hover .remove-message {
+    display: block;
+}
+
+.message-wrapper .sender-photo {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.message-wrapper .sender-name {
+    word-wrap: break-word;
+    width: 70px;
+    margin-left: 10px;
+}
+
+.message-wrapper .message-content-preview {
+    margin-left: 35px;
+}
+
+.message-wrapper .sending-date {
+    margin-right: 12px;
+    margin-left: auto;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.pages .prev,
+.pages .next {
+    width: 13px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.pages .prev {
+    margin-left: auto;
+    background: url("../../images/common/prev-next-page.png") no-repeat;
+    background-size: contain;
+}
+
+.pages .next {
+    background: url("../../images/common/prev-next-page.png") no-repeat;
+    transform: rotateZ(180deg);
+    background-size: contain;
+}
+
+.page-numbers {
+    display: flex;
+    flex-shrink: 0;
+    margin: 0 10px;
+}
+
+.page-numbers a {
+    color: #b3a99c;
+    font: 400 18px / 22px "OpenSans-Regular";
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 14px;
+}
+
+.page-numbers a:hover {
+    color: #faf7f3;
+    background-color: #2c3e50;
+}
+
+@media only screen and (max-device-width: 768px), screen and (max-width: 768px) {
+    .messages-container {
+        width: 280px;
+        padding: 20px;
+    }
+
+    .messages-status {
+        padding: 3px 7px;
+    }
+
+    .messages {
+        margin-bottom: 25px;
+    }
+
+    .message-wrapper {
+        height: auto;
+    }
+
+    .message-wrapper .message-content-preview {
+        order: 4;
+        margin: 0;
+        padding: 10px;
+        border-top: 1px solid #e1d9cf;
+        width: 100%;
+    }
+
+    .message-wrapper.not-read .message-content-preview {
+        border-color: #2c3e50;
+    }
+
+    .message-wrapper .sending-date {
+        order: 3;
+    }
+
+    .page-numbers a {
+        font-size: 13.5px;
+    }
+
+    .pages .prev, .pages .next {
+        width: 10px;
+        height: 11px;
+    }
+
+    .message-wrapper:hover .remove-message {
+        display: none;
+    }
+
+    #overlay .close {
+        top: -50px;
+        right: -8px;
+    }
+
+}

@@ -249,16 +249,6 @@
     background: url("../images/cabinet/offering-left-hand.png");
 }
 
-#overlay {
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: rgba(44, 62, 80, 0.8);
-    z-index: 1000;
-    position: fixed;
-    overflow: auto;
-}
-
 #calendar-modal-wrapper {
     display: none;
     position: absolute;

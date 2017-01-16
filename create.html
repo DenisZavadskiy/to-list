@@ -14,6 +14,68 @@
     <link rel="stylesheet" href="styles/common/common-mobile.css">
 </head>
 <body>
+
+<section id="overlay" style="display: block">
+    <section class="overlay-content messages-container">
+        <h3 class="message-container-title">Мої повідомлення</h3>
+        <section class="messages-status-container">
+            <a href="#" class="messages-status active" id="allMessages">Всі</a>
+            <a href="#" class="messages-status" id="readMessages"><span class="hide-in-mobile">Тільки</span> прочитані</a>
+            <a href="#" class="messages-status" id="notReadMessages"><span class="hide-in-mobile">Тільки</span> непрочитані</a>
+        </section>
+        <section class="message-block-captions">
+            <span class="block-caption">Відправник</span>
+            <span class="block-caption hide-in-mobile">Повідомлення</span>
+            <span class="block-caption">Відправлено</span>
+        </section>
+        <section class="messages">
+            <div class="message-wrapper">
+                <img src="images/messages/sender_1.png" class="sender-photo">
+                <span class="sender-name">Вікторія Рогаченко</span>
+                <span class="message-content-preview">Дякую за співпарцю, буду<span class="hide-in-mobile"> звертатися до</span>...</span>
+                <span class="sending-date">21 квітня 2017</span>
+                <a href="#" class="remove-message"></a>
+            </div>
+            <div class="message-wrapper not-read">
+                <img src="images/messages/sender_2.png" class="sender-photo">
+                <span class="sender-name">Юлиана Негура</span>
+                <span class="message-content-preview">Доброго дня хочу домовитися<span class="hide-in-mobile"> з вами</span>...</span>
+                <span class="sending-date">21 квітня 2017</span>
+                <a href="#" class="remove-message"></a>
+            </div>
+            <div class="message-wrapper hide-in-mobile">
+                <img src="images/messages/sender_1.png" class="sender-photo">
+                <span class="sender-name">Вікторія Рогаченко</span>
+                <span class="message-content-preview">Дякую за співпарцю, буду звертатися до...</span>
+                <span class="sending-date">21 квітня 2017</span>
+                <a href="#" class="remove-message"></a>
+            </div>
+            <div class="message-wrapper not-read hide-in-mobile">
+                <img src="images/messages/sender_2.png" class="sender-photo">
+                <span class="sender-name">Юлиана Негура</span>
+                <span class="message-content-preview">Доброго дня хочу домовитися з вами...</span>
+                <span class="sending-date">21 квітня 2017</span>
+                <a href="#" class="remove-message"></a>
+            </div>
+        </section>
+        <section class="pages">
+            <span class="prev"></span>
+            <span class="page-numbers">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+            </span>
+            <span class="next"></span>
+        </section>
+        <a href="#" class="close">×</a>
+    </section>
+</section>
+
 <header>
     <menu>
         <div class="content header-content">
@@ -142,7 +204,8 @@
             </div>
             <div class="input-wrapper">
                 <label class="input-label hide-in-mobile" for="workDescription">Опис завдання</label>
-                <textarea name="work-description" class="work-description" id="workDescription" cols="30" rows="3" placeholder="Опис"></textarea>
+                <textarea name="work-description" class="work-description" id="workDescription" cols="30" rows="3"
+                          placeholder="Опис"></textarea>
             </div>
         </section>
         <section class="state-btns">

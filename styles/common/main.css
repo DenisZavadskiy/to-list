@@ -7,3 +7,23 @@ body {
     box-sizing: border-box;
     margin: auto;
 }
+
+#overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 62, 80, 0.8);
+    z-index: 1000;
+    position: fixed;
+    overflow: auto;
+}
+
+#overlay .close {
+    position: absolute;
+    text-decoration: none;
+    font-size: 50px;
+    cursor: pointer;
+    top: -20px;
+    right: -40px;
+    color: white;
+}
