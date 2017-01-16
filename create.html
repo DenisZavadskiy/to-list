@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
-    <!-- styles -->
+    <title>Create</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles/the-modal.css" media="all"/>
     <link rel="stylesheet" href="styles/common/imports.css">
     <link rel="stylesheet" href="styles/the-modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css">
     <link rel="stylesheet" href="styles/modal.css">
-    <link rel="stylesheet" href="styles/workers.css">
+    <link rel="stylesheet" href="styles/create.css">
     <link rel="stylesheet" href="styles/common/common-mobile.css">
-    <!-- /styles -->
 </head>
 <body>
 <header>
@@ -88,145 +87,69 @@
 
 <section class="main-content">
     <div class="content">
-        <section class="worker-description">
-            <div class="workers-count-info">
-                <div class="worker-icon"></div>
-                <span class="workers-count-wrapper">
-                    <span class="workers-count">31</span><span class="annotation">Виконавець в цій категорії</span>
-                </span>
+        <section class="work-adding">
+            <h1 class="work-adding-title">Створення завдання</h1>
+            <div class="input-wrapper">
+                <label class="input-label hide-in-mobile" for="workName">Назва завдання</label>
+                <input type="text" id="workName" class="work-name" placeholder="Назва">
             </div>
-            <span class="worker-description-title">
-                <span class="title">Якісна і швидка поклейка обоїв в Києві</span><br>
-                <span class="annotation">Проверенные мастера поклеят обои качественно и быстро. Заказывайте услугу не теряя времени!</span>
-            </span>
-        </section>
+            <div class="input-wrapper">
+                <label class="input-label hide-in-mobile" for="specializations">Спеціалізації</label>
+                <select name="specializations" id="specializations" multiple>
+                    <optgroup label="Ремонт">
+                        <option value="repair-house">Ремонт Квартир</option>
+                        <option value="repair-tech">Ремонт цифрової техніки</option>
+                    </optgroup>
+                    <optgroup label="Автопослуги">
+                        <option value="fuel-delivery">Доставка топлива</option>
+                    </optgroup>
+                    <optgroup label="Інші послуги">
+                        <option value="delivery">Доставка</option>
+                    </optgroup>
+                </select>
+                <a href="#" class="btn all-services-btn">Всі послуги</a>
+            </div>
+            <div class="input-wrapper">
+                <label class="input-label hide-in-mobile" for="workCost">Вартість</label>
+                <div class="work-cost-wrapper">
+                    <div class="currency-wrapper">
+                        <input type="text" id="workCost" class="work-cost" placeholder="Вартість">
+                        <select name="currency" id="currency">
+                            <option value="uah">ГРН</option>
+                            <option value="rub">РУБ</option>
+                            <option value="usd">ДОЛЛ</option>
+                            <option value="eu">ЕВРО</option>
+                        </select>
+                    </div>
 
-        <section class="worker-show-category">
-            <a href="#" class="sort-category">Топ 10 виконавців</a>
-            <a href="#" class="sort-category">Найпопулярніші</a>
-            <a href="#" class="sort-category">Найактивніші</a>
-            <a href="#" class="sort-category">Нові виконавці</a>
-
-            <ul class="workers-categories-wrapper">
-                <li>Поклейка паперових обоїв
-                    <ul class="categories">
-                        <li><a href="#" class="work-type-category">Домашній майстер</a></li>
-                        <li><a href="#" class="work-type-category">Будівельні роботи</a></li>
-                        <li><a href="#" class="work-type-category">Клінінгові послуги</a></li>
-                        <li><a href="#" class="work-type-category">Побутові послуги</a></li>
-                        <li><a href="#" class="work-type-category">Ремонт техніки</a></li>
-                        <li><a href="#" class="work-type-category">Краса і здоров'я</a></li>
-                        <li><a href="#" class="work-type-category">Автопослуги</a></li>
-                        <li><a href="#" class="work-type-category">Організація свят</a></li>
-                        <li><a href="#" class="work-type-category">Інші категорії</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <section class="workers">
-            <div class="worker online">
-                <header>
-                    <div class="is-online-indicator"></div>
-                    <span class="worker-name">Юрій Волошин</span>
-                    <a href="#" class="worker-reviews-icon"></a>
-                    <span class="marks">
-                        <span class="good-mark">45</span>/<span class="bad-mark">0</span>
-                    </span>
-                </header>
-                <footer>
-                    <div class="place">Київ</div>
-                    <a href="#" class="write-to-worker">Написати</a>
-                </footer>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="perAgreement">
+                        <label for="perAgreement">За домовленністю</label>
+                    </div>
+                </div>
             </div>
-            <div class="worker">
-                <header>
-                    <div class="is-online-indicator"></div>
-                    <span class="worker-name">Олександр Кравців</span>
-                    <a href="#" class="worker-reviews-icon"></a>
-                    <span class="marks">
-                        <span class="good-mark">23</span>/<span class="bad-mark">1</span>
-                    </span>
-                </header>
-                <footer>
-                    <div class="place">Київ</div>
-                    <a href="#" class="write-to-worker">Написати</a>
-                </footer>
+            <div class="input-wrapper price-input-wrapper">
+                <label class="input-label hide-in-mobile" for="workTerms">Терміни актуальності</label>
+                <div class="work-terms-wrapper terms-wrapper">
+                    <input type="text" id="workTerms" class="work-terms" placeholder="Терміни">
+                    <select name="terms" id="terms">
+                        <option value="hours">Години</option>
+                        <option value="days">Дні</option>
+                        <option value="weeks">Тижні</option>
+                        <option value="months">Місяці</option>
+                    </select>
+                </div>
             </div>
-            <div class="worker">
-                <header>
-                    <div class="is-online-indicator"></div>
-                    <span class="worker-name">Володимир Матейко</span>
-                    <a href="#" class="worker-reviews-icon"></a>
-                    <span class="marks">
-                        <span class="good-mark">10</span>/<span class="bad-mark">4</span>
-                    </span>
-                </header>
-                <footer>
-                    <div class="place">Миколаїв</div>
-                    <a href="#" class="write-to-worker">Написати</a>
-                </footer>
-            </div>
-            <div class="worker">
-                <header>
-                    <div class="is-online-indicator"></div>
-                    <span class="worker-name">Олександр Кравців</span>
-                    <a href="#" class="worker-reviews-icon"></a>
-                    <span class="marks">
-                        <span class="good-mark">23</span>/<span class="bad-mark">1</span>
-                    </span>
-                </header>
-                <footer>
-                    <div class="place">Київ</div>
-                    <a href="#" class="write-to-worker">Написати</a>
-                </footer>
-            </div>
-            <div class="worker online">
-                <header>
-                    <div class="is-online-indicator"></div>
-                    <span class="worker-name">Юрій Волошин</span>
-                    <a href="#" class="worker-reviews-icon"></a>
-                    <span class="marks">
-                        <span class="good-mark">45</span>/<span class="bad-mark">0</span>
-                    </span>
-                </header>
-                <footer>
-                    <div class="place">Київ</div>
-                    <a href="#" class="write-to-worker">Написати</a>
-                </footer>
-            </div>
-            <div class="worker">
-                <header>
-                    <div class="is-online-indicator"></div>
-                    <span class="worker-name">Володимир Матейко</span>
-                    <a href="#" class="worker-reviews-icon"></a>
-                    <span class="marks">
-                        <span class="good-mark">10</span>/<span class="bad-mark">4</span>
-                    </span>
-                </header>
-                <footer>
-                    <div class="place">Миколаїв</div>
-                    <a href="#" class="write-to-worker">Написати</a>
-                </footer>
+            <div class="input-wrapper">
+                <label class="input-label hide-in-mobile" for="workDescription">Опис завдання</label>
+                <textarea name="work-description" class="work-description" id="workDescription" cols="30" rows="3" placeholder="Опис"></textarea>
             </div>
         </section>
-
-        <section class="pages">
-            <span class="prev"></span>
-            <span class="page-numbers">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-            </span>
-            <span class="next"></span>
+        <section class="state-btns">
+            <a href="#" class="btn ready-btn">Готово</a>
+            <a href="#" class="btn preview-btn">Попередній перегляд</a>
         </section>
     </div>
-
     <section class="questions">
         <div class="content">
             <div class="caption">
@@ -244,7 +167,6 @@
             </div>
         </div>
     </section>
-
     <section class="modal-wrapper">
         <div class="modal" id="test-modal" style="display: none">
             <a href="#" class="close">×</a>
@@ -338,6 +260,8 @@
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.the-modal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script src="scripts/create.js"></script>
 <script src="scripts/index.js"></script>
 </body>
 </html>

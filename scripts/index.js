@@ -1,4 +1,6 @@
 jQuery(function ($) {
+    var cachedWidth = $(window).width();
+
     $('body').on('click', '.appointment-trigger', function (e) {
         $('#overlay').css("display", "block");
         $('#calendar-modal-wrapper').css("display", "block");
@@ -11,30 +13,31 @@ jQuery(function ($) {
         e.preventDefault();
         $('#test-modal').modal().open();
     }).on('click', '.has-submenu', function (e) {
-        if (e.target === e.currentTarget && window.innerWidth <= 500) {
+        e.stopPropagation();
+        if (e.target === e.currentTarget && window.innerWidth <= 768) {
             $(this).children('.submenu').toggle(0, "", function () {
                 $(this).find('.submenu').css("display", "none");
             });
         }
     });
 
-    $(window).resize(function () {
-        $('.submenu').css("display", "none").attr("style", "");
+    $(document).on('click', function (e) {
+        hideAllSubmenu();
     });
 
-    //     .on('click', '.main-list-item', function (e) {
-    //     e.stopPropagation();
-    //     if (e.target === e.currentTarget) {
-    //         $(this).toggleClass('show-list');
-    //     }
-    // });
-    //
-    // $(document).click(function() {
-    //     $('.submenu').hide();
-    //     $('.main-list-item').removeClass('show-list');
-    // });
+    $(window).resize(function () {
+        var newWidth = $(window).width();
 
-    // attach modal close handler
+        if(newWidth !== cachedWidth){
+            hideAllSubmenu();
+            cachedWidth = newWidth;
+        }
+    });
+
+    function hideAllSubmenu() {
+        $('.submenu').css("display", "none").attr("style", "");
+    }
+
     $('.modal .close').on('click', function (e) {
         e.preventDefault();
         $.modal().close();

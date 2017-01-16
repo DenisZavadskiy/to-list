@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 500px), screen and (max-width: 500px) {
+@media only screen and (max-device-width: 768px), screen and (max-width: 768px) {
     body > header, body > header menu {
         width: 100%;
         margin: 0 auto;
@@ -20,7 +20,6 @@
     .content.main-content {
         width: 280px;
     }
-
 
     #search-form,
     .user-panel,
@@ -55,8 +54,6 @@
 
     .header-content .categories > li:before {
         position: absolute;
-        right: 37px;
-        top: 60px;
     }
 
     .header-content .categories .submenu ul {
@@ -68,7 +65,13 @@
         margin-top: 0;
         border: none;
         top: 120px;
+        font-size: 26px;
+        line-height: 39px;
+    }
+
+    .header-content .categories .submenu-2 li {
         font-size: 18px;
+        line-height: 30px;
     }
 
     .header-content .categories li:hover > ul {
@@ -175,6 +178,10 @@
     .questions .write-to-us-wrapper {
         margin: auto;
         width: 280px;
+    }
+
+    .questions .write-to-us-btn {
+        width: 100%;
     }
 
     .comments-wrapper footer {

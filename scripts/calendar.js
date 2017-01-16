@@ -37,6 +37,7 @@ app.directive("calendar", function () {
 
             scope.next = function () {
                 var next = scope.month.clone();
+
                 _removeTime(next.month(next.month() + 1).date(7));
                 scope.month.month(scope.month.month() + 1);
                 _buildMonth(scope, next, scope.month);
@@ -44,6 +45,7 @@ app.directive("calendar", function () {
 
             scope.previous = function () {
                 var previous = scope.month.clone();
+
                 _removeTime(previous.month(previous.month() - 1).date(7));
                 scope.month.month(scope.month.month() - 1);
                 _buildMonth(scope, previous, scope.month);
@@ -56,13 +58,12 @@ app.directive("calendar", function () {
                     },
                     selectedTimeIndex = selected.times.indexOf(scope.selectedTime);
 
-                selected.times[selectedTimeIndex].selected = true;
-                selected.times[selectedTimeIndex].comment = scope.comment;
+                setTimeStateToSelected.call(selected, selectedTimeIndex);
+                addCommentToSelectedTime.call(selected, scope, selectedTimeIndex);
+
                 selected.events.push(event);
 
-                scope.selectedTime = "";
-                scope.selectedDateAndTime = "";
-                scope.comment = "";
+                resetVariables.call(scope);
             };
 
             scope.selectTime = function (time) {
@@ -70,11 +71,25 @@ app.directive("calendar", function () {
                     scope.selectedTime = time;
                     scope.selectedDateAndTime = scope.selected.format('Do MMMM') + ' ' + time.value;
                 } else {
-                    alert("На цей час вже хтось записаний");
+                    alert("На цей час вже є запис.");
                 }
             };
         }
     };
+
+    function resetVariables() {
+        this.selectedTime = "";
+        this.selectedDateAndTime = "";
+        this.comment = "";
+    }
+
+    function setTimeStateToSelected(selectedTimeIndex) {
+        this.times[selectedTimeIndex].selected = true;
+    }
+
+    function addCommentToSelectedTime(scope, selectedTimeIndex) {
+        this.times[selectedTimeIndex].comment = scope.comment;
+    }
 
     function _removeTime(date) {
         return date.day(0).hour(0).minute(0).second(0).millisecond(0);
@@ -191,7 +206,6 @@ app.directive("calendar", function () {
             date = date.clone();
             date.add(1, "d");
         }
-        //console.log(days);
         return days;
     }
 });

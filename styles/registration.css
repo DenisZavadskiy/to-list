@@ -151,7 +151,7 @@
     display: none;
 }
 
-@media only screen and (max-device-width: 500px), screen and (max-width: 500px) {
+@media only screen and (max-device-width: 768px), screen and (max-width: 768px) {
     .registration-form {
         width: 100%;
     }

@@ -94,6 +94,7 @@ calendar {
     cursor: pointer;
     color: black;
     flex-shrink: 0;
+    font-family: OpenSans-Regular;
 }
 
 .calendar > div.week > span.day:first-child {
