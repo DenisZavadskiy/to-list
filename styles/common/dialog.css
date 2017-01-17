@@ -9,14 +9,25 @@
 }
 
 .conversation-wrapper {
-    padding: 20px 0 20px 20px;
+    padding: 20px 10px 20px 20px;
 }
 
 .conversation-wrapper .heading {
-    color:  #2c3e50;
+    color: #2c3e50;
     font-size: 14px;
     display: flex;
     margin-bottom: 20px;
+    align-items: center;
+}
+
+.conversation-wrapper .heading .back-btn {
+    width: 13px;
+    height: 20px;
+    background: url("../../images/common/back_btn.png") no-repeat;
+    background-size: contain;
+    margin-right: 6px;
+    margin-left: -13px;
+    display: none;
 }
 
 .conversation-wrapper .heading .dialog-container-title {
@@ -39,6 +50,8 @@
     overflow: auto;
     height: 220px;
     width: 100%;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 
 .dialog-message-container {
@@ -59,18 +72,35 @@
     height: 40px;
     box-sizing: border-box;
     border: 1px solid #e1d9cf;
-    background-color: #f4f2f2;
+    background: #f4f2f2 url("../../images/common/user_image.png") center center no-repeat;
+}
+
+.dialog-message-container .member-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.dialog-message-container .member-image img[src=""] {
+    display: none;
 }
 
 .dialog-message-container .dialog-message-wrapper {
     width: 460px;
     border: 1px solid #e1d9cf;
-    background-color:  #f4f2f2;
+    background-color: #f4f2f2;
     font: 400 12px "OpenSans-Regular";
-    color:  #2c3e50;
+    color: #2c3e50;
     padding: 9px;
     box-sizing: border-box;
     position: relative;
+}
+
+.dialog-message-container.interlocutor .dialog-message-wrapper {
+    margin-left: 15px;
+}
+
+.dialog-message-container.you .dialog-message-wrapper {
+    margin-right: 15px;
 }
 
 .dialog-message-container.interlocutor .dialog-message-wrapper:before {
@@ -102,14 +132,142 @@
 }
 
 .dialog-message-container .dialog-message-info .member-name {
-    color:  #6a747e;
+    color: #6a747e;
 }
 
 .dialog-message-container .dialog-message-info .dialog-message-date {
-    color:  #b6b5b5;
+    color: #b6b5b5;
 }
-
 
 .send-message-form-wrapper {
     padding: 20px;
+    border-top: 3px solid #e1d9cf;
+}
+
+.send-message-form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.send-message-form .message-content {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 60px;
+    min-height: 60px;
+    box-sizing: border-box;
+    padding: 10px;
+    font: 400 12px/14px "OpenSans-Regular";
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1d9cf;
+}
+
+.send-message-form .send-message-btn {
+    margin-left: auto;
+    background-color: #ec644b;
+    width: 160px;
+    height: 40px;
+    font: 400 12px/14px "OpenSans-Regular";
+    color: #ffffff;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.attach-file-wrapper {
+    position: relative;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attach-file-label-wrapper {
+    font: 400 12px/14px "OpenSans-Regular";
+    margin-left: auto;
+    width: 200px;
+}
+
+.attach-file-zone {
+    width: 40px;
+    height: 40px;
+    border: 1px dotted #2c3e50;
+    background: url("../../images/common/upload_icon.png") center center no-repeat;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.attach-file-label {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #ec644b;
+    position: absolute;
+}
+
+.attach-file-label-annotation {
+    color: #2c3e50;
+}
+
+#file {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*scrollbar*/
+.conversation::-webkit-scrollbar {
+    background-color: #e1d9cf;
+    width: 3px;
+}
+
+.conversation::-webkit-scrollbar-thumb {
+    background-color: #c4b9ab;
+    width: 3px;
+}
+
+@media only screen and (max-device-width: 768px), screen and (max-width: 768px) {
+    .dialog-container {
+        width: 280px;
+    }
+
+    .send-message-form {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .send-message-form .send-message-btn {
+        width: 100%;
+    }
+
+    .attach-file-wrapper {
+        margin-bottom: 20px;
+        width: 234px;
+    }
+
+    .attach-file-zone {
+        width: 35px;
+        height: 35px;
+    }
+
+    .attach-file-label-wrapper {
+        font-size: 11px;
+        width: 183px;
+    }
+
+    .conversation::-webkit-scrollbar {
+        display: none;
+    }
+
+    .conversation::-webkit-scrollbar-thumb {
+        display: none;
+    }
+
+    .conversation-wrapper .heading .back-btn {
+        display: block;
+    }
 }

@@ -16,7 +16,7 @@
 <body>
 
 <section id="overlay" style="display: flex">
-    <section style="display: none" class="overlay-content messages-container">
+    <section style="" class="overlay-content messages-container">
         <h3 class="message-container-title">Мої повідомлення</h3>
         <section class="messages-status-container">
             <a href="#" class="messages-status active" id="allMessages">Всі</a>
@@ -74,19 +74,22 @@
         </section>
         <a href="#" class="close">×</a>
     </section>
-    <section class="overlay-content dialog-container">
+    <section style="display: none" class="overlay-content dialog-container">
         <section class="conversation-wrapper">
             <section class="heading">
+                <div class="back-btn"></div>
                 <h3 class="dialog-container-title hide-in-mobile">Мої повідомлення ></h3>
                 <span class="conversation-with">Переписка з <a href="#" class="whom">Вікторією Рогаченко</a></span>
             </section>
             <section class="conversation">
                 <div class="dialog-message-container interlocutor">
-                    <div class="member-image"></div>
+                    <div class="member-image">
+                        <img src="images/messages/sender_1.png">
+                    </div>
                     <div class="dialog-message-wrapper">
                         <div class="dialog-message-info">
                             <span class="member-name">Вікторія Рогоченко</span>
-                            <span class="dialog-message-date">21 квітня 13:32</span>
+                            <span class="dialog-message-date"><span class="hide-in-mobile">21 квітня</span> 13:32</span>
                         </div>
                         <div class="dialog-message">
                             Необходим логотип для интернет магазина, торгующего цифровой
@@ -97,11 +100,13 @@
                     </div>
                 </div>
                 <div class="dialog-message-container you">
-                    <div class="member-image"></div>
+                    <div class="member-image">
+                        <img src="">
+                    </div>
                     <div class="dialog-message-wrapper">
                         <div class="dialog-message-info">
                             <span class="member-name">Ви</span>
-                            <span class="dialog-message-date">21 квітня 13:35</span>
+                            <span class="dialog-message-date"><span class="hide-in-mobile">21 квітня</span> 13:35</span>
                         </div>
                         <div class="dialog-message">
                             Необходим логотип для интернет магазина, торгующего цифровой
@@ -112,13 +117,28 @@
             </section>
         </section>
         <section class="send-message-form-wrapper">
-            <form action="">
+            <form action="" class="send-message-form">
                 <textarea cols="30" rows="10" class="message-content" placeholder="Почніть набирати повідомлення"></textarea>
-                <input type="file" style="opacity: 0" name="file" id="file" data-multiple-caption="{count} files selected" multiple>
-                <label for="file">Долучити файли</label>
-                <input type="submit" value="Надіслати">
+                <div class="attach-file-wrapper">
+                    <div class="attach-file-zone"></div>
+                    <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple>
+                    <div class="attach-file-label-wrapper">
+                        <label for="file" class="attach-file-label"><span>Долучити файли</span></label><br>
+                        <span class="attach-file-label-annotation">або перетягніть їх в дану область, щоб додати до повідомлення</span>
+                    </div>
+                </div>
+                <input type="submit" class="send-message-btn" value="Надіслати">
             </form>
         </section>
+    </section>
+    <section style="display: none" class="overlay-content login-form-container">
+        <h3 class="login-form-title">Вхід в систему</h3>
+        <form action="" class="login-form">
+            <input type="text" class="login-or-email" placeholder="Логін або електронна пошта">
+            <input type="password" class="password" placeholder="Пароль">
+            <input type="submit" value="Увійти" class="login-btn">
+        </form>
+        <a href="#" class="close">×</a>
     </section>
 </section>
 

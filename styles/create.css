@@ -235,10 +235,17 @@
 }
 
 .state-btns .ready-btn {
-    padding-left: 35%;
-    background: #ec644b url("../images/work-description/checked.png") no-repeat 30% center;
-    text-align: left;
     margin-bottom: 20px;
+    background-color: #ec644b;
+}
+
+.state-btns .ready-btn::before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
+    background: url("../images/work-description/checked.png") center no-repeat;
 }
 
 .state-btns .preview-btn {
@@ -378,10 +385,5 @@
     .currency-wrapper input[type=text],
     .terms-wrapper input[type=text] {
         width: 80%;
-    }
-
-    .state-btns .ready-btn {
-        padding-left: 45%;
-        background-position: 40% center;
     }
 }
